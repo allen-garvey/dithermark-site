@@ -21,7 +21,7 @@
         var carouselImage = document.getElementById('carousel-image');
         var carouselButtonRight = document.getElementById('carousel-button-right');
         var carouselButtonLeft = document.getElementById('carousel-button-left');
-        var images = ['nyc.png', 'home-sweet.png', 'tomato.png', 'neon-flower.png', 'jackson.png'];
+        var images = ['home-sweet.png', 'nyc.png', 'neon-flower.png', 'tomato.png', 'jackson.png'];
         var currentIndex = 0;
 
         function displayImage(){
