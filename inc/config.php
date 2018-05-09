@@ -24,4 +24,11 @@
 
     define('CSS_APP_URL', CSS_URL_BASE.'style.css');
 
+    //pages
+    define('HOME_PAGE_URL', BASE_URL);
+    define('FAQ_PAGE_URL', BASE_URL.'faq');
+    define('APPENDIX_PAGE_URL', BASE_URL.'appendix');
+    define('DITHERMARK_APP_URL', '//app.dithermark.com');
+
+
     

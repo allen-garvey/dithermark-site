@@ -12,8 +12,10 @@
         <header class="header">
             <nav class="nav container">
                 <ul>
-                    <li class="brand">Dithermark</li>
-                    <li>App</li>
+                    <li class="brand"><a href="<?= HOME_PAGE_URL; ?>">Dithermark</a></li>
+                    <li><a href="<?= DITHERMARK_APP_URL; ?>">App</a></li>
+                    <li><a href="<?= FAQ_PAGE_URL; ?>">FAQ</a></li>
+                    <li><a href="<?= APPENDIX_PAGE_URL; ?>">Appendix</a></li>
                 </ul>
             </nav>
         </header>

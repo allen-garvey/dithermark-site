@@ -1,12 +1,8 @@
 .header{
-    padding: 24px 0;
-    margin-bottom: 24px;
+    padding: $vertical_rhythm 0;
+    margin-bottom: $vertical_rhythm;
     background-color: black;
     color: white;
-    
-    .brand{
-        font-weight: bold;
-    }
 }
 
 .nav{
@@ -16,6 +12,34 @@
         display: flex;
     }
     li{
-        padding-right: 1em;
+        padding-right: 2em;
+    }
+    a{
+        text-decoration: none;
+        &:link{
+            color: white;
+        }
+        &:visited{
+            color: #999;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .brand{
+        font-weight: bold;
+        a{
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@include desktop_mq{
+    .nav li{
+        padding-right: 3em;
     }
 }
