@@ -11,7 +11,7 @@
     <div class="site-tagline">
         <div class="tagline-text">
             <h1 class="tagline-title">Dithermark</h1>
-            <p>Create art while exploring image dithering and color quantization algorithms</p>
+            <p>Create art with image dithering and color quantization algorithms</p>
         </div>
         <div class="tagline-overlay"></div>
     </div>
