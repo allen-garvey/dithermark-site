@@ -1,6 +1,12 @@
 <div class="home-header">
     <div class="carousel">
         <img src="<?= IMAGES_URL.'nyc.png'; ?>" alt=""/>
+        <div class="carousel-button-container carousel-left">
+            <div class="carousel-button"><span class="carousel-button-text">&lt;</span></div>
+        </div>
+        <div class="carousel-button-container carousel-right">
+            <div class="carousel-button"><span class="carousel-button-text">&gt;</span></div>
+        </div>
     </div>
     <div class="site-tagline">
         <div class="tagline-text">
