@@ -25,7 +25,7 @@
         var currentIndex = 0;
 
         function displayImage(){
-            carouselImage.src = '/images/' + images[currentIndex];
+            carouselImage.src = '<?= IMAGES_URL; ?>' + images[currentIndex];
         }
 
         carouselButtonLeft.onclick = function(){
