@@ -39,6 +39,20 @@
 */
 .carousel{
     position: relative;
+    //from: https://stackoverflow.com/questions/3900436/image-scaling-by-css-is-there-a-webkit-alternative-for-moz-crisp-edges
+    img{
+        //https://stackoverflow.com/questions/8522047/why-is-this-container-div-taller-than-required-to-wrap-the-image-it-contains
+        //otherwise there will be slight space below image
+        display: block;
+        image-rendering:optimizeSpeed;             /* Legal fallback */
+        image-rendering:-moz-crisp-edges;          /* Firefox        */
+        image-rendering:-o-crisp-edges;            /* Opera          */
+        image-rendering:-webkit-optimize-contrast; /* Safari         */
+        image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+        image-rendering:crisp-edges;               /* CSS4 Proposed  */
+        image-rendering:pixelated;                 /* CSS4 Proposed  */
+        -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+    }
 }
 .carousel-button-container{
     position: absolute;
