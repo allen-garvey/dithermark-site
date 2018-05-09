@@ -4,6 +4,7 @@
 
 .home-header{
     position: relative;
+    margin-bottom: $vertical_rhythm;
 }
 .tagline-text{
     position: relative;
@@ -36,6 +37,13 @@
         background-color: black;
         opacity: 0.7;
         z-index: 1;
+    }
+
+    /*
+    * Body copy
+    */
+    .home-copy{
+        font-size: 1.33em;
     }
 }
 

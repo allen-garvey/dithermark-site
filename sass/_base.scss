@@ -13,6 +13,9 @@ h1{
 .main, .nav{
     padding: 0 $global_horizontal_padding;
 }
+.main{
+    padding-bottom: 14rem;
+}
 
 img, picture{
     max-width: 100%;
@@ -25,4 +28,5 @@ img, picture{
 
 p{
     margin-top: 0;
+    line-height: 1.25em;
 }
