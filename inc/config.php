@@ -1,13 +1,4 @@
 <?php
-    //get build mode from command-line arguments
-    if(!empty($argv) && count($argv) > 1 && $argv[1] === 'release'){
-        define('BUILD_MODE_RELEASE', true);
-    }
-    else{
-        define('BUILD_MODE_RELEASE', false);
-    }
-
-
     /*
     * File path constants
     */
