@@ -1,0 +1,21 @@
+.header{
+    padding: 24px 0;
+    margin-bottom: 24px;
+    background-color: black;
+    color: white;
+    
+    .brand{
+        font-weight: bold;
+    }
+}
+
+.nav{
+    ul{
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+    li{
+        padding-right: 1em;
+    }
+}

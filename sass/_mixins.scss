@@ -1,0 +1,5 @@
+@mixin desktop_mq{
+    @media screen and (min-width: $desktop_mq_width){
+        @content;
+    }
+}

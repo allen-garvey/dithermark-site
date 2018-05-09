@@ -1,0 +1,29 @@
+{
+  "name": "dithermark-site",
+  "version": "1.0.0",
+  "description": "Support and marketing website for Dithermark app",
+  "main": "public_html/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "gulp:watch": "gulp watch",
+    "start": "http-server public_html -c-1 -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allen-garvey/dithermark-site.git"
+  },
+  "author": "Allen Garvey",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/allen-garvey/dithermark-site/issues"
+  },
+  "homepage": "https://github.com/allen-garvey/dithermark-site#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1",
+    "http-server": "^0.11.1"
+  }
+}

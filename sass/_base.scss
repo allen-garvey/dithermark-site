@@ -1,0 +1,28 @@
+html, body{
+    font-family: 'Liberation Sans', Helvetica, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+html, body, h1, h2, h3, h4, ul, ol{
+    margin: 0;
+}
+
+h1{
+    font-size: 3.157rem;
+}
+
+.main, .nav{
+    padding: 0 $global_horizontal_padding;
+}
+
+img, picture{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+p{
+    margin-top: 0;
+}
