@@ -1,6 +1,6 @@
 <div class="home-header">
     <div class="carousel">
-        <img src="<?= IMAGES_URL.'nyc.png'; ?>" alt="" id="carousel-image"/>
+        <img src="<?= IMAGES_URL.'home-sweet.png'; ?>" alt="Dithermark image output example" id="carousel-image"/>
         <div class="carousel-button-container carousel-left">
             <div class="carousel-button" id="carousel-button-left"><span class="carousel-button-text">&lt;</span></div>
         </div>
