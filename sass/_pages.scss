@@ -1,0 +1,14 @@
+/*
+* Styles that apply to FAQ and Appendix pages
+*/
+
+.page-title{
+    margin-bottom: $vertical_rhythm;
+}
+
+.contents-list{
+    margin: 2*$vertical_rhythm 0 3*$vertical_rhythm;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.33em;
+}

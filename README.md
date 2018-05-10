@@ -7,7 +7,7 @@ The support and marketing website for Dithermark. Not to be confused with the ac
 
 * POSIX compatible operating system
 * GNU Make
-* PHP >= 7.0 (with `cli` extension)
+* PHP >= 7.0 (with `cli` and `xml` extension)
 * Node >= 6.11
 * npm
 

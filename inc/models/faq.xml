@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<faq-list>
+    <faq id="system-requirements">
+        <question>Where are the system requirements to use Dithermark?</question>
+        <answer>A relatively recent version of Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge is required to run Dithermark. If the version of the browser you are using is from 2017 or later, you are most likely good to go. A laptop or desktop computer is recommended since the user interface benefits from larger screen sizes and larger images take up more memory and processing power, but not required.</answer>
+    </faq>
+    <faq id="random-images">
+        <question>Where do the random images come from?</question>
+        <answer>The random images are provided by <a href="https://unsplash.com/?utm_source=dithermark&amp;utm_medium=referral">Unsplash,</a> courtesy of their <a href="https://unsplash.com/developers">free photo API.</a></answer>
+    </faq>
+    <faq id="export-file-types">
+        <question>What file type should I use when exporting an image?</question>
+        <answer>It is generally recommended you use the png file type when exporting your images, as it avoids <a href="https://en.wikipedia.org/wiki/Pixel_art#Saving_and_compression">undesirable compression artifacts.</a> However, in certain situations (such as when exporting an unpixelated image), exporting as a jpeg might result in a smaller file and contain few noticeable artifacts.</answer>
+    </faq>
+</faq-list>
+
+<!-- 
+<faq id="">
+    <question></question>
+    <answer></answer>
+</faq>
+-->
+

@@ -15,15 +15,11 @@
         padding-right: 2em;
     }
     a{
-        text-decoration: none;
         &:link{
             color: white;
         }
         &:visited{
             color: #999;
-        }
-        &:hover{
-            text-decoration: underline;
         }
     }
 

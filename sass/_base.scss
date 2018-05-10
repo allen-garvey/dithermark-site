@@ -10,6 +10,13 @@ h1{
     font-size: 3.157rem;
 }
 
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
 .main, .nav{
     padding: 0 $global_horizontal_padding;
 }
