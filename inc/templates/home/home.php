@@ -26,26 +26,42 @@
 </div>
 <script>
     (function(){
-        var carouselImage = document.getElementById('carousel-image');
         var carouselButtonRight = document.getElementById('carousel-button-right');
         var carouselButtonLeft = document.getElementById('carousel-button-left');
-        var images = ['home-sweet', 'nyc', 'neon-flower', 'tomato', 'jackson'];
+        var imageUrls = ['home-sweet', 'nyc', 'neon-flower', 'tomato', 'jackson'].map(function(name){
+            return '<?= IMAGES_URL; ?>' + name + '.png';
+        });
+        var imageElements = new Array(imageUrls.length);
+        var image = document.getElementById('carousel-image');
+        <?php //Have to clone it so it won't get overridden ?>
+        imageElements[0] = image.cloneNode();
         var currentIndex = 0;
-
+        <?php //Create and keep reference to img to avoid redownloaded each time ?>
         function displayImage(){
-            carouselImage.src = '<?= IMAGES_URL; ?>' + images[currentIndex] + '.png';
+            if(!imageElements[currentIndex]){
+                imageElements[currentIndex] = document.createElement('img');
+                imageElements[currentIndex].src = imageUrls[currentIndex];
+                imageElements[currentIndex].onload = function(){
+                    changeImage(currentIndex);
+                };
+            }
+            else{
+                changeImage(currentIndex);
+            }
         }
-
+        function changeImage(currentIndex){
+            image.src = imageUrls[currentIndex];
+        }
         carouselButtonLeft.onclick = function(){
             currentIndex--;
             if(currentIndex < 0){
-                currentIndex = images.length - 1;
+                currentIndex = imageUrls.length - 1;
             }
             displayImage();
         };
         carouselButtonRight.onclick = function(){
             currentIndex++;
-            if(currentIndex >= images.length){
+            if(currentIndex >= imageUrls.length){
                 currentIndex = 0;
             }
             displayImage();
