@@ -29,11 +29,11 @@
         var carouselImage = document.getElementById('carousel-image');
         var carouselButtonRight = document.getElementById('carousel-button-right');
         var carouselButtonLeft = document.getElementById('carousel-button-left');
-        var images = ['home-sweet.png', 'nyc.png', 'neon-flower.png', 'tomato.png', 'jackson.png'];
+        var images = ['home-sweet', 'nyc', 'neon-flower', 'tomato', 'jackson'];
         var currentIndex = 0;
 
         function displayImage(){
-            carouselImage.src = '<?= IMAGES_URL; ?>' + images[currentIndex];
+            carouselImage.src = '<?= IMAGES_URL; ?>' + images[currentIndex] + '.png';
         }
 
         carouselButtonLeft.onclick = function(){
