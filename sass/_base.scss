@@ -7,7 +7,7 @@ html, body, h1, h2, h3, h4, ul, ol{
 }
 
 h1{
-    font-size: 3.157rem;
+    font-size: $font_size5;
 }
 
 a{
@@ -17,8 +17,10 @@ a{
     }
 }
 
-.main, .nav{
+.nav, .text-section{
     padding: 0 $global_horizontal_padding;
+    //or we get problems with the padding not lining up
+    box-sizing: border-box;
 }
 .main{
     padding-bottom: 14rem;
@@ -29,7 +31,7 @@ img, picture{
 }
 
 .container{
-    max-width: 1000px;
+    max-width: $container_max_width;
     margin: 0 auto;
 }
 

@@ -2,6 +2,10 @@
 * Styles that apply to FAQ and Appendix pages
 */
 
+.text-page{
+    margin-top: $vertical_rhythm / 3;
+}
+
 .page-title{
     margin-bottom: $vertical_rhythm;
 }

@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin mini_tablet_landscape_mq{
+    @media screen and (min-width: $mini_tablet_landscape_mq_width) and (max-height: $mini_tablet_landscape_mq_height){
+        @content;
+    }
+}

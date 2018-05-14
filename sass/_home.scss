@@ -4,17 +4,36 @@
 
 .home-header{
     position: relative;
-    margin-bottom: $vertical_rhythm;
+    margin: 0 auto $vertical_rhythm;
+    max-width: $container_max_width;
 }
 .tagline-text{
     position: relative;
     z-index: 100;
+    p{
+        margin-bottom: 8px;
+    }
 }
 
 .site-tagline{
     background-color: black;
     color: white;
-    padding: 8px;
+    padding: 8px $global_horizontal_padding;
+}
+.tagline-overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.callout{
+    font-size: $font_size3;
 }
 
 @include desktop_mq{
@@ -25,25 +44,35 @@
         text-shadow: -1px 1px 0 black;
         padding: 16px;
     }
-    .tagline-title{
-        font-size: 4.2rem;
-    }
     .tagline-overlay{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: black;
-        opacity: 0.7;
-        z-index: 1;
+        display: block;
+    }
+    .tagline-title{
+        font-size: $font_size7;
     }
 
     /*
     * Body copy
     */
     .home-copy{
-        font-size: 1.33em;
+        font-size: $font_size1;
+    }
+}
+
+//title is below fold on small tablets in landscape mode
+@include mini_tablet_landscape_mq{
+    .site-tagline{
+        position: absolute;
+        background-color: transparent;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: initial;
+        text-shadow: -1px 1px 0 black;
+        padding: 16px;
+    }
+    .tagline-overlay{
+        display: block;
     }
 }
 
