@@ -7,12 +7,14 @@
     margin: 0 auto $vertical_rhythm;
     max-width: $container_max_width;
 }
-.tagline-text{
+.tagline-container{
     position: relative;
     z-index: 100;
-    p{
-        margin-bottom: 8px;
-    }
+}
+.tagline-text{
+    position: relative;
+    top: -4px;
+    margin-bottom: 8px;
 }
 
 .site-tagline{
@@ -36,16 +38,27 @@
     font-size: $font_size3;
 }
 
-@include desktop_mq{
+@mixin non_mobile_shared_styles{
     .site-tagline{
         position: absolute;
         background-color: transparent;
-        bottom: 0;
         text-shadow: -1px 1px 0 black;
         padding: 16px;
     }
+    .tagline-text{
+        margin: 0;
+        top: -8px;
+    }
     .tagline-overlay{
         display: block;
+    }
+}
+
+
+@include desktop_mq{
+    @include non_mobile_shared_styles();
+    .site-tagline{
+        bottom: 0;
     }
     .tagline-title{
         font-size: $font_size7;
@@ -61,18 +74,13 @@
 
 //title is below fold on small tablets in landscape mode
 @include mini_tablet_landscape_mq{
+    @include non_mobile_shared_styles();
     .site-tagline{
-        position: absolute;
-        background-color: transparent;
         top: 0;
         left: 0;
         right: 0;
         bottom: initial;
-        text-shadow: -1px 1px 0 black;
-        padding: 16px;
-    }
-    .tagline-overlay{
-        display: block;
+        padding-bottom: 0;
     }
 }
 

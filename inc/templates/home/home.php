@@ -9,9 +9,9 @@
         </div>
     </div>
     <div class="site-tagline">
-        <div class="tagline-text">
+        <div class="tagline-container">
             <h1 class="tagline-title">Dithermark</h1>
-            <p>Create art with image dithering and color quantization algorithms</p>
+            <p class="tagline-text">Create art with image dithering and color quantization algorithms</p>
         </div>
         <div class="tagline-overlay"></div>
     </div>
