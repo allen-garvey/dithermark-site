@@ -1,24 +1,65 @@
 <?xml version="1.0"?>
 
 <faq-list>
+    <faq id="why-create-dithermark">
+        <question>Why create Dithermark?</question>
+        <answer></answer>    
+    </faq>
     <faq id="system-requirements">
-        <question>Where are the system requirements to use Dithermark?</question>
-        <answer>A relatively recent version of Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge is required to run Dithermark. If the version of the browser you are using is from 2017 or later, you are most likely good to go. A laptop or desktop computer is recommended since the user interface benefits from larger screen sizes and larger images take up more memory and processing power, but not required.</answer>
+        <question>What are the system requirements?</question>
+        <answer>A recent version of Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge is required to run Dithermark. If your browser version is from 2017 or later, you are most likely good to go. A laptop or desktop computer is recommended since the user interface benefits from larger screen sizes and larger images take up more memory and processing power, but not required.</answer>
+    </faq>
+    <faq id="open-source">
+        <question>Is Dithermark open source?</question>
+        <answer>YES! Dithermark is open source and released under the MIT license. You can get the source code on the <a href="https://github.com/allen-garvey/dithermark">Dithermark GitHub page.</a></answer>    
+    </faq>
+    <faq id="bugs">
+        <question>I think I&#8217;ve found a bug, what do I do?</question>
+        <answer></answer>    
     </faq>
     <faq id="random-images">
         <question>Where do the random images come from?</question>
         <answer>The random images are provided by <a href="https://unsplash.com/?utm_source=dithermark&amp;utm_medium=referral">Unsplash,</a> courtesy of their <a href="https://unsplash.com/developers">free photo API.</a></answer>
     </faq>
+    <faq id="privacy">
+        <question>What is your privacy policy?</question>
+        <answer></answer>    
+    </faq>
+    <faq id="opening-large-images">
+        <question>Why does my browser crash when opening an image?</question>
+        <answer></answer>    
+    </faq>
+    <faq id="opening-image-url">
+        <question>Why does opening an image from a URL not work?</question>
+        <answer></answer>    
+    </faq>
+    <faq id="webgl">
+        <question>Should I enable WebGL?</question>
+        <answer></answer>    
+    </faq>
+    <faq id="saved-settings-missing">
+        <question>What happened to my saved settings/palettes?</question>
+        <answer></answer>
+    </faq>
+    <faq id="random-dither-artifacts">
+        <question>How do I get rid of the artifacts in the random dithers?</question>
+        <answer></answer>    
+    </faq>
+    <faq id="color-count">
+        <question>Why only 12 colors?</question>
+        <answer></answer>    
+    </faq>
+    <faq id="exporting-images">
+        <question>Why doesn&#8217;t the export/download button work?</question>
+        <answer></answer>    
+    </faq>
     <faq id="export-file-types">
         <question>What file type should I use when exporting an image?</question>
-        <answer>It is generally recommended you use the png file type when exporting your images, as it avoids <a href="https://en.wikipedia.org/wiki/Pixel_art#Saving_and_compression">undesirable compression artifacts.</a> However, in certain situations (such as when exporting an unpixelated image), exporting as a jpeg might result in a smaller file and contain few noticeable artifacts.</answer>
+        <answer>It is generally recommended you use the png file type when exporting your images, as it avoids <a href="https://en.wikipedia.org/wiki/Pixel_art#Saving_and_compression">undesirable compression artifacts.</a> However, in certain situations (such as when exporting an unpixelated image), exporting as a jpeg might result in a smaller file in exchange for a small loss in quality.</answer>
+    </faq>
+    <faq id="learn-more">
+        <question>Where can I learn more about dithering or color quantization?</question>
+        <answer></answer>    
     </faq>
 </faq-list>
-
-<!-- 
-<faq id="">
-    <question></question>
-    <answer></answer>
-</faq>
--->
 
