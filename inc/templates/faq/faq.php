@@ -17,8 +17,8 @@
     <div>
         <?php foreach($faqList->faq as $faq): ?>
             <div class="faq-container" id="<?= $faq['id']; ?>">
-                <div class="faq-question"><p><?= $faq->question; ?></p></div>
-                <div class="faq-answer"><p><?= $faq->answer->asXML(); ?></p></div>
+                <div class="faq-question"><p><?= PageView::smartenSingleQuotes($faq->question); ?></p></div>
+                <div class="faq-answer"><p><?= PageView::smartenSingleQuotes($faq->answer->asXML()); ?></p></div>
             </div>
         <?php endforeach; ?>
     </div>
