@@ -7,14 +7,14 @@
     </faq>
     <faq id="system-requirements">
         <question>What are the system requirements?</question>
-        <answer>A recent version of Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge is required to run Dithermark. If your browser version is from 2017 or later, you are most likely good to go. A laptop or desktop computer is recommended since the user interface benefits from larger screen sizes and larger images take up more memory and processing power, but not required.</answer>
+        <answer>A recent version (released in 2017 or later) of Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge is required. A laptop or desktop computer with Google Chrome or Mozilla Firefox is recommended for best experience.</answer>
     </faq>
     <faq id="open-source">
         <question>Is Dithermark open source?</question>
-        <answer>YES! Dithermark is open source and released under the MIT license. You can get the source code on the <a href="https://github.com/allen-garvey/dithermark">Dithermark GitHub page.</a></answer>    
+        <answer>Yes! Dithermark is open source and released under the MIT license. You can get the source code on the <a href="https://github.com/allen-garvey/dithermark">Dithermark GitHub page.</a></answer>    
     </faq>
     <faq id="bugs">
-        <question>I think I&#8217;ve found a bug, what do I do?</question>
+        <question>I think I've found a bug, what should I do?</question>
         <answer></answer>    
     </faq>
     <faq id="random-images">
@@ -35,7 +35,7 @@
     </faq>
     <faq id="webgl">
         <question>Should I enable WebGL?</question>
-        <answer>WebGL is enabled by default as it leverages the power of your GPU to complete tasks 30-100 times faster. Dithermark uses WebGL (when enabled) for everything except the error propogation dithers and optimize palette functionality. The only times when it might be advisable to disable WebGL is if you are noticing a large amount of artifacts in the random dithers, or you are opening images that are too large to fit in a single WebGL texture unit (you will see a warning if this is the case). If you do not see an option to enable WebGL, that means your device/browser doesn&#8217;t support it. In that case do not worry, as everything will still work, it will just be slower than if your device supported WebGL.</answer>    
+        <answer>WebGL is enabled by default as it leverages the power of your GPU to complete tasks 30-100 times faster. Dithermark uses WebGL (when enabled) for everything except the error propogation dithers and optimize palette functionality. The only times when it might be advisable to disable WebGL is if you are noticing a large amount of artifacts in the random dithers, or you are opening images that are too large to fit in a single WebGL texture unit (you will see a warning if this is the case). If you do not see an option to enable WebGL, that means your device/browser doesn't support it. In that case do not worry, as everything will still work, it will just be slower than if your device supported WebGL.</answer>    
     </faq>
     <faq id="random-dither-artifacts">
         <question>How do I get rid of the artifacts in the random dithers?</question>
@@ -50,12 +50,12 @@
         <answer></answer>    
     </faq>
     <faq id="exporting-images">
-        <question>Why doesn&#8217;t the export/download button work?</question>
-        <answer>On browsers lacking <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob">HTMLCanvasElement.toBlob()</a> support (Apple Safari and Microsoft Edge), exporting a large image may fail. In that case, reset the zoom level to 100 and then right click on desktop/long press on mobile on the image you want to save. Select the &#8216;Save image&#8217; or &#8216;Save image as…&#8217; menu option to save the image as a png file.</answer>    
+        <question>Why does saving my image fail?</question>
+        <answer>On browsers lacking <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob">HTMLCanvasElement.toBlob()</a> support (Apple Safari and Microsoft Edge), exporting a large image may fail. In that case, reset the zoom level to 100 and then right click on desktop/long press on mobile on the image you want to save. Select the 'Save image' or 'Save image as…' menu option to save your image as a png file.</answer>    
     </faq>
     <faq id="export-file-types">
         <question>What file type should I use when exporting an image?</question>
-        <answer>It is generally recommended you use the png file type when exporting your images, as it avoids <a href="https://en.wikipedia.org/wiki/Pixel_art#Saving_and_compression">undesirable compression artifacts.</a> However, in certain situations (such as when exporting an unpixelated image), exporting as a jpeg might result in a smaller file in exchange for a small loss in quality.</answer>
+        <answer>It is recommended you use the png file type when exporting your images, as it avoids <a href="https://en.wikipedia.org/wiki/Pixel_art#Saving_and_compression">undesirable compression artifacts.</a> However, in certain situations (such as when exporting a large, unpixelated image), exporting as a jpeg may result in a smaller file in exchange for a negligible loss in quality.</answer>
     </faq>
     <faq id="learn-more">
         <question>Where can I learn more about dithering or color quantization?</question>
