@@ -1,4 +1,12 @@
 <?php
+    //find out if we are running from makefile, or directly through fastcgi
+    if(!empty($argv)){
+        define('IS_FASTCGI', false);
+    }
+    else{
+        define('IS_FASTCGI', true);
+    }
+
     /*
     * File path constants
     */
@@ -22,7 +30,7 @@
     define('BASE_URL', '/');
     define('CSS_URL_BASE', BASE_URL.'styles/');
     define('JS_URL_BASE', BASE_URL.'js/');
-    define('IMAGES_URL', BASE_URL.'images/');
+    define('IMAGES_URL', BASE_URL.'images/cropped/');
 
     define('CSS_APP_URL', CSS_URL_BASE.'style.css');
 
