@@ -24,40 +24,20 @@
 </div>
 <script>
     (function(){
-        var carouselButtonRight = document.getElementById('carousel-button-right');
-        var carouselButtonLeft = document.getElementById('carousel-button-left');
-        var imageUrls = ['home-sweet', 'nyc', 'neon-flower', 'tomato', 'jackson'].map(function(name){
-            return '<?= IMAGES_URL; ?>' + name + '.png';
-        });
-        var imageElements = new Array(imageUrls.length);
+        var imageUrls = ['home-sweet', 'nyc', 'neon-flower', 'tomato', 'jackson'];
         var image = document.getElementById('carousel-image');
-        <?php //Have to clone it so it won't get overridden ?>
-        imageElements[0] = image.cloneNode();
         var currentIndex = 0;
-        <?php //Create and keep reference to img to avoid redownloaded each time ?>
         function displayImage(){
-            if(!imageElements[currentIndex]){
-                imageElements[currentIndex] = document.createElement('img');
-                imageElements[currentIndex].src = imageUrls[currentIndex];
-                imageElements[currentIndex].onload = function(){
-                    changeImage(currentIndex);
-                };
-            }
-            else{
-                changeImage(currentIndex);
-            }
+            image.src = '<?= IMAGES_URL; ?>'+imageUrls[currentIndex]+'.png';
         }
-        function changeImage(currentIndex){
-            image.src = imageUrls[currentIndex];
-        }
-        carouselButtonLeft.onclick = function(){
+        document.getElementById('carousel-button-left').onclick = function(){
             currentIndex--;
             if(currentIndex < 0){
                 currentIndex = imageUrls.length - 1;
             }
             displayImage();
         };
-        carouselButtonRight.onclick = function(){
+        document.getElementById('carousel-button-right').onclick = function(){
             currentIndex++;
             if(currentIndex >= imageUrls.length){
                 currentIndex = 0;
