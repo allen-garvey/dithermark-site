@@ -7,7 +7,7 @@
     </faq>
     <faq id="system-requirements">
         <question>What are the system requirements?</question>
-        <answer>A recent version (released in 2017 or later) of Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge is required. A laptop or desktop computer with Google Chrome or Mozilla Firefox is recommended for best experience.</answer>
+        <answer>A recent version (released in 2017 or later) of Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge is required. A laptop or desktop computer with Google Chrome or Mozilla Firefox is recommended for best experience, as certain features may be disabled in Apple Safari or Microsoft Edge.</answer>
     </faq>
     <faq id="open-source">
         <question>Is Dithermark open source?</question>
@@ -15,7 +15,7 @@
     </faq>
     <faq id="bugs">
         <question>I think I've found a bug, what should I do?</question>
-        <answer></answer>    
+        <answer>First, read through this FAQ and see if it addresses your problem (particularly that you meet the minimum system requirements). If nothing helps, please open an issue on our <a href="https://github.com/allen-garvey/dithermark/issues">GitHub issues page.</a> While we appreciate you taking the time to help improve Dithermark, please be aware that it is maintained by a single person for free, so it might be some time before your issue is addressed.</answer>    
     </faq>
     <faq id="random-images">
         <question>Where do the random images come from?</question>
@@ -27,7 +27,7 @@
     </faq>
     <faq id="opening-large-images">
         <question>Why does my browser crash when opening an image?</question>
-        <answer></answer>    
+        <answer>Opening very large images on mobile devices has been found to crash the browser. Make sure the 'Shrink large images' option is checked in the 'settings' tab. If this still does not help, try opening a smaller image, such as by selected 'Random image' from the 'open' tab, and then pixelate the image by selecting the option in the 'image' tab (this has the same effect as shrinking the image). Now try reopening the image that caused your browser to crash.</answer>    
     </faq>
     <faq id="opening-image-url">
         <question>Why does opening an image from a URL not work?</question>
@@ -59,7 +59,7 @@
     </faq>
     <faq id="learn-more">
         <question>Where can I learn more about dithering or color quantization?</question>
-        <answer></answer>    
+        <answer><a href="${APPENDIX_PAGE_URL}">Our appendix page</a> provides links to resources where you can learn more about image dithering, color quantization and other related topics.</answer>    
     </faq>
 </faq-list>
 
