@@ -38,7 +38,7 @@
         <answer>WebGL is enabled by default as it leverages the power of your GPU to complete tasks 30-100 times faster. Dithermark uses WebGL (when enabled) for everything except the error propogation dithers and optimize palette functionality. The only times when it might be advisable to disable WebGL is if you are noticing a large amount of artifacts in the random dithers, or you are opening images that are too large to fit in a single WebGL texture unit (you will see a warning if this is the case). If you do not see an option to enable WebGL, that means your device/browser doesn't support it. In that case do not worry, as everything will still work, it will just be slower than if your device supported WebGL.</answer>    
     </faq>
     <faq id="random-dither-artifacts">
-        <question>How do I get rid of the artifacts in the random dithers?</question>
+        <question>Why are there artifacts in the random dithers?</question>
         <answer></answer>    
     </faq>
     <faq id="saved-settings-missing">
