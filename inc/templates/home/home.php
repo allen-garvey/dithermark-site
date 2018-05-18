@@ -19,7 +19,7 @@
 <div class="home-copy text-section">
     <p>Do you love pixel art, needlepoint or retro video games? One thing these art forms share is using a small color palette to simulate a wider range of colors. Today, a similar effect can be achieved by using <a href="https://en.wikipedia.org/wiki/Dither#Digital_photography_and_image_processing">image dithering</a> or <a href="https://en.wikipedia.org/wiki/Color_quantization">color quantization</a> algorithms.
     </p>
-    <p>Dithermark is an in-browser app that gives you these tools to use on your own photos to create original artwork. All that&#8217;s required is a relatively recent web browser (desktop or laptop computer recommended).
+    <p>Dithermark is an in-browser app that gives you these tools to use on your own photos to create original artwork. All you need is a recently updated web browser (desktop or laptop computer with Google Chrome or Mozilla Firefox recommended).
 
     </p>
     <p class="callout"><a href="<?= DITHERMARK_APP_URL; ?>">Try it out!</a>
