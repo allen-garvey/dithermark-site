@@ -11,14 +11,14 @@
     <div class="site-tagline">
         <div class="tagline-container">
             <h1 class="tagline-title">Dithermark</h1>
-            <p class="tagline-text">Create art with image dithering and color quantization algorithms</p>
+            <p class="tagline-text">Create art with image dithering algorithms</p>
         </div>
         <div class="tagline-overlay"></div>
     </div>
 </div>
 <div class="home-copy text-section">
     <p>
-        Do you love pixel art, needlepoint or retro video games? One thing these art forms share is using a small color palette to simulate a wider range of colors. Dithermark uses the magic of <a href="https://en.wikipedia.org/wiki/Dither#Digital_photography_and_image_processing">image dithering</a> and <a href="https://en.wikipedia.org/wiki/Color_quantization">color quantization</a> algorithms to let you easily achieve a similar effect using your own photos. All you need is a recently updated web browser <small>(desktop or laptop computer with Google Chrome or Mozilla Firefox recommended)</small>.
+        Do you love pixel art, needlepoint or retro video games? One thing these art forms share is using a small color palette to simulate a wider range of colors. Dithermark uses the magic of <a href="https://en.wikipedia.org/wiki/Dither#Digital_photography_and_image_processing">image dithering</a> algorithms to let you easily achieve a similar effect using your own photos. All you need is a recently updated web browser <small>(desktop or laptop computer recommended)</small>.
     </p>
     <p class="callout"><a href="<?= DITHERMARK_APP_URL; ?>">Try it out!</a>
 </div>
