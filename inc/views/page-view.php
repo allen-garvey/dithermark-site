@@ -13,4 +13,9 @@ class PageView{
     public static function smartenSingleQuotes(string $s): string{
         return str_replace('\'', '&#8217;', preg_replace('/ \'/', ' &#8216;', $s));
     }
+
+    //innerxml minus the enclosing tag
+    public static function innerXml(SimpleXMLElement $node, string $tagName): string{
+        return preg_replace('`^<'.$tagName.'>|</'.$tagName.'>$`', '', $node->asXML());
+    }
 }

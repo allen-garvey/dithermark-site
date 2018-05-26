@@ -18,7 +18,7 @@
         <?php foreach($faqList->faq as $faq): ?>
             <div class="faq-container" id="<?= $faq['id']; ?>">
                 <div class="faq-question"><p><?= PageView::smartenSingleQuotes($faq->question); ?></p></div>
-                <div class="faq-answer"><p><?= str_replace('${APPENDIX_PAGE_URL}', APPENDIX_PAGE_URL, PageView::smartenSingleQuotes($faq->answer->children()->asXML())); ?></p></div>
+                <div class="faq-answer"><p><?= str_replace('${APPENDIX_PAGE_URL}', APPENDIX_PAGE_URL, PageView::smartenSingleQuotes(PageView::innerXml($faq->answer, 'answer'))); ?></p></div>
             </div>
         <?php endforeach; ?>
     </div>

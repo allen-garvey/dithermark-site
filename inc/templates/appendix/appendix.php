@@ -21,7 +21,7 @@
                 <div><?= PageView::smartenSingleQuotes($section->description); ?></div>
                 <ul>
                     <?php foreach($section->sources->source as $source): ?>
-                        <li><?= PageView::smartenSingleQuotes($source->children()->asXML()); ?></li>
+                        <li><?= PageView::smartenSingleQuotes(PageView::innerXml($source, 'source')); ?></li>
                     <?php endforeach; ?>
                 </ul>
             </section>
