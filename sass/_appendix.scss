@@ -1,0 +1,16 @@
+/*
+* Styles for Appendix page
+*/
+
+.appendix-section{
+    margin-bottom: 1.5 * $vertical_rhythm;
+}
+
+.appendix-source-list{
+    list-style-type: square;
+    margin-top: 1em;
+    
+    li{
+        margin-bottom: 1em;
+    }
+}

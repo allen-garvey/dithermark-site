@@ -16,10 +16,10 @@
     <?php //appendix section content ?>
     <div>
         <?php foreach($appendixModel->section as $section): ?>
-            <section class="faq-container" id="<?= $section['id']; ?>">
+            <section class="appendix-section" id="<?= $section['id']; ?>">
                 <h2><?= $section['title']; ?></h2>
                 <div><?= PageView::smartenSingleQuotes($section->description); ?></div>
-                <ul>
+                <ul class="appendix-source-list">
                     <?php foreach($section->sources->source as $source): ?>
                         <li><?= PageView::smartenSingleQuotes(PageView::innerXml($source, 'source')); ?></li>
                     <?php endforeach; ?>
