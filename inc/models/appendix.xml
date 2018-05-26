@@ -7,6 +7,7 @@
             <source><a href="http://allenchou.net/2016/05/a-brain-dump-of-what-i-worked-on-for-uncharted-4/">This blog post on Uncharted 4</a> details how they used dithering to simulate semi-transparent foliage in front of the camera</source>
             <source><a href="http://alex-charlton.com/posts/Dithering_on_the_GPU/">Dithering on the GPU</a> the inspiration to port the dithers to WebGL, and the source for the hue-lightness dithering algorithm</source>
             <source><a href="http://pippin.gimp.org/a_dither/">a dither</a> the basis for the arithmetic dithers</source>
+            <source><a href="https://codegolf.stackexchange.com/questions/26554/dither-a-grayscale-image/26572">This codegolf challenge to dither an image</a> had some interesting, original approaches </source>
         </sources>
     </section>
     <section title="Color Quantization" id="color-quantization">
