@@ -21,7 +21,10 @@
                 <div><?= PageView::smartenSingleQuotes($section->description); ?></div>
                 <ul class="appendix-source-list">
                     <?php foreach($section->sources->source as $source): ?>
-                        <li><?= PageView::smartenSingleQuotes(PageView::innerXml($source, 'source')); ?></li>
+                        <li>
+                            <a href="<?= $source['url'] ?>" class="appendix-source-title"><?= PageView::smartenSingleQuotes($source->title); ?></a>
+                            <?= PageView::smartenSingleQuotes(PageView::innerXml($source->description, 'description')); ?>
+                        </li>
                     <?php endforeach; ?>
                 </ul>
             </section>

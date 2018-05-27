@@ -3,42 +3,90 @@
     <section title="Dithering" id="dithering">
         <description></description>
         <sources>
-            <source><a href="http://www.tannerhelland.com/4660/dithering-eleven-algorithms-source-code/">Image Dithering: Eleven Algorithms and Source Code</a> a great introduction to dithering, and the article that served as the original inspiration for Dithermark</source>
-            <source><a href="http://allenchou.net/2016/05/a-brain-dump-of-what-i-worked-on-for-uncharted-4/">This blog post on Uncharted 4</a> details how they used dithering to simulate semi-transparent foliage in front of the camera</source>
-            <source><a href="http://alex-charlton.com/posts/Dithering_on_the_GPU/">Dithering on the GPU</a> the inspiration to port the dithers to WebGL, and the source for the hue-lightness dithering algorithm</source>
-            <source><a href="http://pippin.gimp.org/a_dither/">a dither</a> the basis for the arithmetic dithers</source>
-            <source><a href="https://codegolf.stackexchange.com/questions/26554/dither-a-grayscale-image/26572">This codegolf challenge to dither an image</a> had some interesting, original approaches </source>
+            <source url="http://www.tannerhelland.com/4660/dithering-eleven-algorithms-source-code/">
+                <title>Image Dithering: Eleven Algorithms and Source Code</title>
+                <description>the article that served as the original inspiration for Dithermark</description>
+            </source>
+            <source url="http://allenchou.net/2016/05/a-brain-dump-of-what-i-worked-on-for-uncharted-4/">
+                <title>This blog post on Uncharted 4</title>
+                <description>details how they used dithering to simulate semi-transparent foliage in front of the camera</description>
+            </source>
+            <source url="http://alex-charlton.com/posts/Dithering_on_the_GPU/">
+                <title>Dithering on the GPU</title>
+                <description>the inspiration to port the dithers to WebGL, and the source for the hue-lightness dithering algorithm</description>
+            </source>
+            <source url="http://pippin.gimp.org/a_dither/">
+                <title>a dither</title>
+                <description>the basis for the arithmetic dithers</description>
+            </source>
+            <source url="https://codegolf.stackexchange.com/questions/26554/dither-a-grayscale-image/26572">
+                <title>This codegolf challenge to dither an image</title>
+                <description>had some interesting, original approaches </description>
+            </source>
         </sources>
     </section>
     <section title="Color Quantization" id="color-quantization">
         <description></description>
         <sources>
-            <source><a href="https://web.cs.wpi.edu/~matt/courses/cs563/talks/color_quant/CQindex.html">An Overview of Color Quantization Techniques</a> a good general overview</source>
-            <source><a href="http://delimitry.blogspot.com/2016/02/octree-color-quantizer-in-python.html">Octree color quantizer in Python</a> implementation of octree color quantization in Python</source>
+           <source url="https://web.cs.wpi.edu/~matt/courses/cs563/talks/color_quant/CQindex.html">
+                <title>An Overview of Color Quantization Techniques</title>
+                <description>a good general overview</description>
+            </source>
+            <source url="http://delimitry.blogspot.com/2016/02/octree-color-quantizer-in-python.html">
+                <title>Octree color quantizer in Python</title>
+                <description>the basis for the octree optimize palette algorithm</description>
+            </source>
         </sources>
     </section>
     <section title="Computer Color" id="computer-color">
         <description></description>
         <sources>
-            <source><a href="http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/">Seven grayscale conversion algorithms</a> interesting article about how something as seemingly as simple as converting an image into black and white is really not so simple. Also is the inpiration for the color dither 'Luma' color comparison algorithm</source>
+            <source url="http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/">
+                <title>Seven grayscale conversion algorithms</title>
+                <description>interesting article about how something as seemingly as simple as converting an image into black and white is really not so simple. Also is the inpiration for the color dither 'Luma' color comparison algorithm</description>
+            </source>
         </sources>
     </section>
     <section title="WebGL" id="webgl">
         <description></description>
         <sources>
-            <source><a href="https://webglfundamentals.org/webgl/lessons/webgl-2d-drawimage.html">WebGL Fundamentals</a> a great resource for learning WebGL, this page on recreating DrawImage was used when implementing the dithers in WebGL</source>
-            <source><a href="https://www.khronos.org/registry/OpenGL-Refpages/gl4/index.php">WebGL GLSL built-in functions</a> a frequently referenced resource while create Dithermark</source>
-            <source><a href="https://webglstats.com/">WebGL Stats</a> the closest thing to <a href="https://caniuse.com/">Can I use…</a> for WebGL support</source>
-            <source><a href="http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/">Improvements to the canonical one-liner GLSL rand()</a> the source for the random function used in the WebGL dithers</source>
-            <source><a href="https://gist.github.com/EliCDavis/f35a9e4afb8e1c9ae94cce8f3c2c9b9a">WebGL Bitwise functions</a> the source for the bitwise functions used in the WebGL arithmetic dithers</source>
+            <source url="https://webglfundamentals.org/webgl/lessons/webgl-2d-drawimage.html">
+                <title>WebGL Fundamentals</title>
+                <description>a great resource for learning WebGL, this page on recreating DrawImage was used when implementing the dithers in WebGL</description>
+            </source>
+            <source url="https://www.khronos.org/registry/OpenGL-Refpages/gl4/index.php">
+                <title>WebGL GLSL built-in functions</title>
+                <description>a frequently consulted resource</description>
+            </source>
+            <source url="https://webglstats.com/">
+                <title>WebGL Stats</title>
+                <description>the closest thing to <a href="https://caniuse.com/">Can I use…</a> for WebGL support</description>
+            </source>
+            <source url="http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/">
+                <title>Improvements to the canonical one-liner GLSL rand()</title>
+                <description>the source for the random function used in the WebGL dithers</description>
+            </source>
+            <source url="https://gist.github.com/EliCDavis/f35a9e4afb8e1c9ae94cce8f3c2c9b9a">
+                <title>WebGL Bitwise functions</title>
+                <description>the source for the bitwise functions used in the WebGL arithmetic dithers</description>
+            </source>
         </sources>
     </section>
     <section title="Recommended Apps" id="recommended-apps">
         <description></description>
         <sources>
-            <source><a href="http://pixelatorapp.com/">Pixelator</a> desktop app specifically made to turn your photos into pixel art</source>
-            <source><a href="https://halftonepro.com/app">Halftone Pro</a> cool web app that showcases halftoning, another type of dithering</source>
-            <source><a href="http://evanw.github.io/webgl-filter/">webgl-filter</a> showcase image filters in WebGL. The source for the denoise filter as well as the contrast algorithm used on Safari and Edge</source>
+            <source url="http://pixelatorapp.com/">
+                <title>Pixelator</title>
+                <description>desktop app specifically made to turn your photos into pixel art</description>
+            </source>
+            <source url="https://halftonepro.com/app">
+                <title>Halftone Pro</title>
+                <description>cool web app that showcases halftoning, another type of dithering</description>
+            </source>
+            <source url="http://evanw.github.io/webgl-filter/">
+                <title>webgl-filter</title>
+                <description>showcase image filters in WebGL. The source for the denoise filter as well as the contrast algorithm used on Safari and Edge</description>
+            </source>
         </sources>
     </section>
 </appendix>
