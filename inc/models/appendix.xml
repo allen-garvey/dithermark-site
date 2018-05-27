@@ -7,14 +7,6 @@
                 <title>Image Dithering: Eleven Algorithms and Source Code</title>
                 <description>the article that served as the original inspiration for Dithermark</description>
             </source>
-            <source url="http://allenchou.net/2016/05/a-brain-dump-of-what-i-worked-on-for-uncharted-4/">
-                <title>This blog post on Uncharted 4</title>
-                <description>details how they used dithering to simulate semi-transparent foliage in front of the camera</description>
-            </source>
-            <source url="http://alex-charlton.com/posts/Dithering_on_the_GPU/">
-                <title>Dithering on the GPU</title>
-                <description>the inspiration to port the dithers to WebGL, and the source for the hue-lightness dithering algorithm</description>
-            </source>
             <source url="http://pippin.gimp.org/a_dither/">
                 <title>a dither</title>
                 <description>the basis for the arithmetic dithers</description>
@@ -22,6 +14,69 @@
             <source url="https://codegolf.stackexchange.com/questions/26554/dither-a-grayscale-image/26572">
                 <title>This codegolf challenge to dither an image</title>
                 <description>had some interesting, original approaches </description>
+            </source>
+            <source url="https://www.visgraf.impa.br/Courses/ip00/proj/Dithering1/">
+                <title>Artistic dithering with textures</title>
+                <description>describes converting a texture into dither matrix, as well as the Veryovka-Buchanan dithering method. Also contains an overview of other dithering methods.</description>
+            </source>
+            <source url="https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html">
+                <title>OpenCV: Image Thresholding</title>
+                <description>compares adapting thresholding with classical threshold algorithm</description>
+            </source>
+        </sources>
+    </section>
+    <section title="Ordered Dithering" id="ordered-dithering">
+        <description></description>
+        <sources>
+            <source url="https://en.wikipedia.org/wiki/Ordered_dithering">
+                <title>Wikipedia's ordered dither article</title>
+                <description>Good introduction to ordered dithering with Bayer matrix examples and formula. However, note that while the formula for the Bayer matrix is correct, the example for the 8×8 matrix is not, something that caused me many headaches.</description>
+            </source>
+            <source url="http://alex-charlton.com/posts/Dithering_on_the_GPU/">
+                <title>Dithering on the GPU</title>
+                <description>the inspiration to port the dithers to WebGL, and the source for the hue-lightness dithering algorithm</description>
+            </source>
+            <source url="https://bisqwit.iki.fi/story/howto/dither/jy/">
+                <title>Joel Yliluoma's arbitrary-palette positional dithering algorithm</title>
+                <description>a variation on ordered dithering specifically tuned smaller output color palettes, such as in videogames and pixel art.</description>
+            </source>
+            <source url="http://allenchou.net/2016/05/a-brain-dump-of-what-i-worked-on-for-uncharted-4/">
+                <title>This blog post from one of the developers of Uncharted 4</title>
+                <description>details how they used dithering to simulate semi-transparent foliage in front of the camera</description>
+            </source>
+            <source url="https://github.com/tromero/BayerMatrix">
+                <title>Bayer Matrix creation function in Python</title>
+                <description>One of the only source code examples I could find for generating a Bayer matrix</description>
+            </source>
+            <source url="http://research.cs.wisc.edu/graphics/Courses/559-f2004/lectures/cs559-5.ppt">
+                <title>University of Wisconsin Madison lecture (Power Point)</title>
+                <description>The basis for the clustered ordered dithering matrix</description>
+            </source>
+            <source url="http://weber.itn.liu.se/~sasgo26/Digital_Halftoning/Thanh.ppt">
+                <title>Clustered-dot-ordered Dither (Power Point)</title>
+                <description>The basis for the square (spiral) ordered dithering matrix. Also mentions digital halftoning.</description>
+            </source>
+        </sources>
+    </section>
+    <section title="Image Filters" id="image-filters">
+        <description></description>
+        <sources>
+            <source url="http://genericgamedev.com/effects/post-processing-pixelation/">
+                <title>Post Processing: Pixelation</title>
+                <description>An article about creative uses of pixelation</description>
+            </source>
+        </sources>
+    </section>
+    <section title="Color" id="color">
+        <description></description>
+        <sources>
+            <source url="https://en.wikipedia.org/wiki/Color_difference">
+                <title>Wikipedia's article on color difference</title>
+                <description>Overview of the different ways colors can be compared</description>
+            </source>
+            <source url="http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/">
+                <title>Seven grayscale conversion algorithms</title>
+                <description>interesting article about how something as seemingly as simple as converting an image into black and white is really not so simple. Also is the inpiration for the color dither 'Luma' color comparison algorithm</description>
             </source>
         </sources>
     </section>
@@ -36,14 +91,9 @@
                 <title>Octree color quantizer in Python</title>
                 <description>the basis for the octree optimize palette algorithm</description>
             </source>
-        </sources>
-    </section>
-    <section title="Computer Color" id="computer-color">
-        <description></description>
-        <sources>
-            <source url="http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/">
-                <title>Seven grayscale conversion algorithms</title>
-                <description>interesting article about how something as seemingly as simple as converting an image into black and white is really not so simple. Also is the inpiration for the color dither 'Luma' color comparison algorithm</description>
+            <source url="http://research.cs.wisc.edu/graphics/Courses/559-f2002/lectures/cs559-5.ppt">
+                <title>University of Wisconsin Madison lecture (Power Point)</title>
+                <description>show different color quantization algorithm's output differences. Also mentions clustered ordered dithering.</description>
             </source>
         </sources>
     </section>
@@ -70,6 +120,10 @@
                 <title>WebGL Bitwise functions</title>
                 <description>the source for the bitwise functions used in the WebGL arithmetic dithers</description>
             </source>
+            <source url="http://madebyevan.com/">
+                <title>Made by Evan</title>
+                <description>cool WebGL projects</description>
+            </source>
         </sources>
     </section>
     <section title="Recommended Apps" id="recommended-apps">
@@ -90,3 +144,8 @@
         </sources>
     </section>
 </appendix>
+
+<!-- <source url="">
+                <title></title>
+                <description></description>
+            </source> -->
