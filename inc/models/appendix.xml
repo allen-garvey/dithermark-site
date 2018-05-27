@@ -54,7 +54,7 @@
             </source>
             <source url="http://weber.itn.liu.se/~sasgo26/Digital_Halftoning/Thanh.ppt">
                 <title>Clustered-dot-ordered Dither (Power Point)</title>
-                <description>The basis for the square (spiral) ordered dithering matrix. Also mentions digital halftoning.</description>
+                <description>Includes an example of the spiral ordered dithering matrix which has similar results to the cluster pattern. Also mentions digital halftoning.</description>
             </source>
         </sources>
     </section>
