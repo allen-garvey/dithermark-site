@@ -11,6 +11,10 @@
                 <title>a dither</title>
                 <description>the basis for the arithmetic dithers</description>
             </source>
+            <source url="https://lists.ffmpeg.org/pipermail/ffmpeg-cvslog/2014-March/075712.html">
+                <title>FFmpeg CVS Commit: add two spatially stable dithering methods</title>
+                <description>Commit where a dither was integrated into FFmpeg with description of its advantages</description>
+            </source>
             <source url="https://codegolf.stackexchange.com/questions/26554/dither-a-grayscale-image/26572">
                 <title>This codegolf challenge to dither an image</title>
                 <description>had some interesting, original approaches </description>
@@ -38,7 +42,7 @@
             </source>
             <source url="https://bisqwit.iki.fi/story/howto/dither/jy/">
                 <title>Joel Yliluoma's arbitrary-palette positional dithering algorithm</title>
-                <description>a variation on ordered dithering specifically tuned smaller output color palettes, such as in videogames and pixel art.</description>
+                <description>a variation on ordered dithering specifically tuned to give better contrast and color fidelity than classical ordered dithering. Also the source for the Yliluoma 1 and Yliluoma 2 dithering algorithms.</description>
             </source>
             <source url="http://allenchou.net/2016/05/a-brain-dump-of-what-i-worked-on-for-uncharted-4/">
                 <title>This blog post from one of the developers of Uncharted 4</title>
@@ -97,12 +101,25 @@
             </source>
         </sources>
     </section>
+    <section title="Canvas API" id="canvas-api">
+        <description></description>
+        <sources>
+            <source url="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas">
+                <title>Optimizing canvas</title>
+                <description>I wasn't able to make use of any of these tips, but the article makes good points that should be kept in mind.</description>
+            </source>
+        </sources>
+    </section>
     <section title="WebGL" id="webgl">
         <description></description>
         <sources>
             <source url="https://webglfundamentals.org/webgl/lessons/webgl-2d-drawimage.html">
                 <title>WebGL Fundamentals</title>
                 <description>a great resource for learning WebGL, this page on recreating DrawImage was used when implementing the dithers in WebGL</description>
+            </source>
+            <source url="http://learnwebgl.brown37.net/12_shader_language/glsl_data_types.html">
+                <title>GLSL Data Types and Variables</title>
+                <description>the range of values for the different data types table ended up being very valuable for fixing some bugs caused by lower default precision on mobile devices.</description>
             </source>
             <source url="https://www.khronos.org/registry/OpenGL-Refpages/gl4/index.php">
                 <title>WebGL GLSL built-in functions</title>
@@ -123,6 +140,15 @@
             <source url="http://madebyevan.com/">
                 <title>Made by Evan</title>
                 <description>cool WebGL projects</description>
+            </source>
+        </sources>
+    </section>
+    <section title="Image Filters" id="image-filters">
+        <description></description>
+        <sources>
+            <source url="http://www.robots.ox.ac.uk/~az/lectures/ia/lect4.pdf">
+                <title>Non-linear filters &amp; Image Compression (PDF)</title>
+                <description>Differences between median and bilateral filters (with image examples) as well as denoising in general</description>
             </source>
         </sources>
     </section>
