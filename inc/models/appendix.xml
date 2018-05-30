@@ -7,6 +7,10 @@
                 <title>Image Dithering: Eleven Algorithms and Source Code</title>
                 <description>the article that served as the original inspiration for Dithermark</description>
             </source>
+            <source url="http://caca.zoy.org/study/index.html">
+                <title>Libcaca study: the science behind colour ASCII art</title>
+                <description>very thorough series of chapters on different aspects of dithering, including lesser known variations on ordered and error diffusion dithering. Also is the source for the halftone ordered dither pattern.</description>
+            </source>
             <source url="http://pippin.gimp.org/a_dither/">
                 <title>a dither</title>
                 <description>the basis for the arithmetic dithers</description>
@@ -14,6 +18,10 @@
             <source url="https://lists.ffmpeg.org/pipermail/ffmpeg-cvslog/2014-March/075712.html">
                 <title>FFmpeg CVS Commit: add two spatially stable dithering methods</title>
                 <description>Commit where a dither was integrated into FFmpeg with description of its advantages</description>
+            </source>
+            <source url="https://www.compuphase.com/riemer.htm">
+                <title>Riemersma dither</title>
+                <description>Description of an original approach to error diffusion dithering using a Hilbert curve</description>
             </source>
             <source url="https://codegolf.stackexchange.com/questions/26554/dither-a-grayscale-image/26572">
                 <title>This codegolf challenge to dither an image</title>
@@ -91,13 +99,41 @@
                 <title>An Overview of Color Quantization Techniques</title>
                 <description>a good general overview</description>
             </source>
+            <source url="http://research.cs.wisc.edu/graphics/Courses/559-f2002/lectures/cs559-5.ppt">
+                <title>University of Wisconsin Madison lecture (Power Point)</title>
+                <description>show different color quantization algorithm's output differences. Also mentions clustered ordered dithering.</description>
+            </source>
+            <source url="https://github.com/leeoniya/RgbQuant.js">
+                <title>RgbQuant.js</title>
+                <description>the source for the RGB Quant algorithm.</description>
+            </source>
+            <source url="https://pdfs.semanticscholar.org/deaf/dd9782adb4f9211bf9743d5cc1bdad3753d2.pdf">
+                <title>A Simple Method for Color Quantization: Octree Quantization (PDF)</title>
+                <description>the original paper introducing octree quantization.</description>
+            </source>
+            <source url="https://www.hindawi.com/journals/cin/2016/5302957/">
+                <title>An Effective Color Quantization Method Using Octree-Based Self-Organizing Maps</title>
+                <description>a paper that describes using neural networks to improve octree color quantization</description>
+            </source>
             <source url="http://delimitry.blogspot.com/2016/02/octree-color-quantizer-in-python.html">
                 <title>Octree color quantizer in Python</title>
                 <description>the basis for the octree optimize palette algorithm</description>
             </source>
-            <source url="http://research.cs.wisc.edu/graphics/Courses/559-f2002/lectures/cs559-5.ppt">
-                <title>University of Wisconsin Madison lecture (Power Point)</title>
-                <description>show different color quantization algorithm's output differences. Also mentions clustered ordered dithering.</description>
+            <source url="http://www.leptonica.com/color-quantization.html">
+                <title>Leptonica Color Quantization</title>
+                <description>describes their variations on median cut and octree color quantization.</description>
+            </source>
+            <source url="https://people.eecs.berkeley.edu/~dcoetzee/downloads/scolorq/">
+                <title>scolorq: A Spatial Color Quantization Utility</title>
+                <description>an original color quantization algorithm and implementation in C++, specifically tuned for small output color palettes.</description>
+            </source>
+            <source url="https://www.codeproject.com/Articles/66341/A-Simple-Yet-Quite-Powerful-Palette-Quantizer-in-C">
+                <title>A Simple - Yet Quite Powerful - Palette Quantizer in C#</title>
+                <description>details an original color quantization algorithm and associated utility in C#. Also includes comparison with other color quantization methods, including some lesser known ones.</description>
+            </source>
+            <source url="https://news.ycombinator.com/item?id=9213461">
+                <title>High quality GIF with FFmpeg (Hacker News comments)</title>
+                <description>fascinating discussion that includes several different color quantization recommendations</description>
             </source>
         </sources>
     </section>
@@ -137,6 +173,10 @@
                 <title>WebGL Bitwise functions</title>
                 <description>the source for the bitwise functions used in the WebGL arithmetic dithers</description>
             </source>
+            <source url="https://github.com/evanw/glfx.js">
+                <title>glfx.js</title>
+                <description>A library of different image filter implemented in WebGL. The source for the denoise filter as well as the contrast algorithm used on Safari and Edge.</description>
+            </source>
             <source url="http://madebyevan.com/">
                 <title>Made by Evan</title>
                 <description>cool WebGL projects</description>
@@ -149,6 +189,14 @@
             <source url="http://www.robots.ox.ac.uk/~az/lectures/ia/lect4.pdf">
                 <title>Non-linear filters &amp; Image Compression (PDF)</title>
                 <description>Differences between median and bilateral filters (with image examples) as well as denoising in general</description>
+            </source>
+            <source url="http://www.mif.vu.lt/atpazinimas/dip/FIP/fip-Smoothin.html#Heading89">
+                <title>Smoothing Operations</title>
+                <description>Nice chart and image examples that show the differences between different linear and non-linear filters, as well as their time complexities.</description>
+            </source>
+            <source url="https://stackoverflow.com/questions/5830139/how-can-i-do-these-image-processing-tasks-using-opengl-es-2-0-shaders?noredirect=1&amp;lq=1">
+                <title>OpenGL Kuwahara filter example</title>
+                <description>The source for the smoothing (Kuwahara filter) translated into WebGL.</description>
             </source>
         </sources>
     </section>
@@ -165,7 +213,7 @@
             </source>
             <source url="http://evanw.github.io/webgl-filter/">
                 <title>webgl-filter</title>
-                <description>showcase image filters in WebGL. The source for the denoise filter as well as the contrast algorithm used on Safari and Edge</description>
+                <description>an in browser image editor that showcases the image filters in the glfx.js library.</description>
             </source>
         </sources>
     </section>
