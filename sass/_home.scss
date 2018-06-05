@@ -34,8 +34,13 @@
     z-index: 1;
 }
 
-.callout{
-    font-size: $font_size3;
+.callout {
+    text-align: center;
+    margin-top: $vertical_rhythm;
+    .btn{
+        font-size: $font_size3;
+        padding: 12px 24px;
+    }
 }
 
 @mixin non_mobile_shared_styles{
