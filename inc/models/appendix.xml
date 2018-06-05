@@ -7,6 +7,10 @@
                 <title>Image Dithering: Eleven Algorithms and Source Code</title>
                 <description>the article that served as the original inspiration for Dithermark</description>
             </source>
+            <source url="http://www.efg2.com/Lab/Library/ImageProcessing/DHALF.TXT">
+                <title>DITHER.TXT</title>
+                <description>one of the orginal references for image dithering</description>
+            </source>
             <source url="http://caca.zoy.org/study/index.html">
                 <title>Libcaca study: the science behind colour ASCII art</title>
                 <description>very thorough series of chapters on different aspects of dithering, including lesser known variations on ordered and error diffusion dithering. Also is the source for the halftone ordered dither pattern.</description>
@@ -34,6 +38,10 @@
             <source url="https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html">
                 <title>OpenCV: Image Thresholding</title>
                 <description>compares adapting thresholding with classical threshold algorithm</description>
+            </source>
+            <source url="https://forums.tigsource.com/index.php?topic=40832.msg1363742#msg1363742">
+                <title>Dither Stabilization</title>
+                <description>describes the creator of <a href="http://dukope.com/">Return of the Obra Dinn's</a> process for making an image dithering visual effect that would remain stable even when the player moves the camera</description>
             </source>
         </sources>
     </section>
