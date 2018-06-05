@@ -18,7 +18,7 @@
 </div>
 <div class="home-copy text-section">
     <p>
-        Do you love pixel art, needlepoint or retro video games? One thing these art forms share is using a small color palette to simulate a wider range of colors. Dithermark uses the magic of <a href="https://en.wikipedia.org/wiki/Dither#Digital_photography_and_image_processing">image dithering</a> algorithms to let you easily achieve a similar effect using your own photos. All you need is a recently updated web browser <small>(desktop or laptop computer recommended)</small>.
+        Do you love pixel art, needlepoint or retro video games? One characteristic these art forms share is using a limited color palette to simulate a wider range of colors. Dithermark uses the magic of <a href="https://en.wikipedia.org/wiki/Dither#Digital_photography_and_image_processing">image dithering</a> algorithms to let you easily achieve a similar effect using your own photos. All you need is a current web browser <small>(desktop or laptop computer recommended for best experience)</small>.
     </p>
     <p class="callout"><a href="<?= DITHERMARK_APP_URL; ?>">Try it out!</a>
 </div>
