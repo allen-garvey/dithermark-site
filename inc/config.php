@@ -34,6 +34,7 @@
     define('IMAGES_URL', BASE_URL.'images/');
 
     define('CSS_APP_URL', CSS_URL_BASE.'style.css');
+    define('DITHERMARK_GITHUB_URL', 'https://github.com/allen-garvey/dithermark/');
 
     //pages
     define('HOME_PAGE_URL', BASE_URL);
