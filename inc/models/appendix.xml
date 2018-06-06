@@ -1,5 +1,14 @@
 <?xml version="1.0"?>
 <appendix>
+    <section title="Source" id="source">
+        <description></description>
+        <sources>
+            <source url="${DITHERMARK_GITHUB_URL}">
+                <title>Dithermark GitHub Page</title>
+                <description>the complete source code for Dithermark</description>
+            </source>
+        </sources>
+    </section>
     <section title="Dithering" id="dithering">
         <description></description>
         <sources>

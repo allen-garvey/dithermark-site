@@ -4,7 +4,7 @@
 <div class="text-page text-section">
     <h1 class="page-title">Appendix</h1>
 
-    <p>This page is for people looking for more technical information about dithering, color quantization or WebGL.</p>
+    <p>This page is for people looking for more technical information about dithering, color quantization or WebGL. For general information about Dithermark, including how to use it, please see the <a href="<?= FAQ_PAGE_URL; ?>">FAQ page.</a></p>
 
     <?php //list of appendix sections ?>
     <ul class="contents-list">
@@ -20,9 +20,11 @@
                 <h2><?= $section['title']; ?></h2>
                 <div><?= PageView::smartenSingleQuotes($section->description); ?></div>
                 <ul class="appendix-source-list">
-                    <?php foreach($section->sources->source as $source): ?>
+                    <?php foreach($section->sources->source as $source): 
+                        $sourceUrl = str_replace('${DITHERMARK_GITHUB_URL}', DITHERMARK_GITHUB_URL, $source['url']);    
+                    ?>
                         <li>
-                            <a href="<?= $source['url'] ?>" class="appendix-source-title"><?= PageView::smartenSingleQuotes($source->title); ?></a>
+                            <a href="<?= $sourceUrl; ?>" class="appendix-source-title"><?= PageView::smartenSingleQuotes($source->title); ?></a>
                             <?= PageView::smartenSingleQuotes(PageView::innerXml($source->description, 'description')); ?>
                         </li>
                     <?php endforeach; ?>
