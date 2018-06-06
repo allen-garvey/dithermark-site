@@ -100,6 +100,19 @@
             </source>
         </sources>
     </section>
+    <section title="Color Cycling" id="color-cycling">
+        <description></description>
+        <sources>
+            <source url="https://blog.prototypr.io/color-cycling-in-pixel-art-c8f20e61b4c4">
+                <title>Color Cycling in Pixel Art</title>
+                <description>Good introduction to color cycling, why it was used, how it works and includes examples</description>
+            </source>
+            <source url="http://www.effectgames.com/effect/article-Old_School_Color_Cycling_with_HTML5.html">
+                <title>Old School Color Cycling with HTML5</title>
+                <description>examples of Mark J. Ferrari's color cycling work</description>
+            </source>
+        </sources>
+    </section>
     <section title="Color Quantization" id="color-quantization">
         <description></description>
         <sources>
