@@ -59,7 +59,7 @@
     </faq>
     <faq id="learn-more">
         <question>Where can I learn more about dithering or color quantization?</question>
-        <answer><a href="${APPENDIX_PAGE_URL}">Our appendix page</a> provides links to resources where you can learn more about image dithering, color quantization and other related topics.</answer>    
+        <answer><a href="${RESOURCES_PAGE_URL}">The resources page</a> contains links where you can learn more about image dithering, color quantization and other related topics.</answer>    
     </faq>
 </faq-list>
 

@@ -3,4 +3,4 @@
         require_once('./inc/config.php');
     }
     require_once(VIEWS_PATH.'page-view.php');
-    PageView::layout(TEMPLATES_APPENDIX_PATH.'appendix.php');
+    PageView::layout(TEMPLATES_RESOURCES_PATH.'resources.php');

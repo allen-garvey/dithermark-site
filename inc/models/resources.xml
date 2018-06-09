@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<appendix>
+<resources>
     <section title="Source" id="source">
         <description></description>
         <sources>
@@ -247,7 +247,7 @@
             </source>
         </sources>
     </section>
-</appendix>
+</resources>
 
 <!-- <source url="">
                 <title></title>

@@ -20,7 +20,7 @@
     define('TEMPLATES_PARTIALS_PATH', TEMPLATES_PATH.'partials'.DIRECTORY_SEPARATOR);
     define('TEMPLATES_HOME_PATH', TEMPLATES_PATH.'home'.DIRECTORY_SEPARATOR);
     define('TEMPLATES_FAQ_PATH', TEMPLATES_PATH.'faq'.DIRECTORY_SEPARATOR);
-    define('TEMPLATES_APPENDIX_PATH', TEMPLATES_PATH.'appendix'.DIRECTORY_SEPARATOR);
+    define('TEMPLATES_RESOURCES_PATH', TEMPLATES_PATH.'resources'.DIRECTORY_SEPARATOR);
     
     //js source file paths
     define('JS_SRC_PATH', ROOT_PATH.'js_src'.DIRECTORY_SEPARATOR);
@@ -39,7 +39,7 @@
     //pages
     define('HOME_PAGE_URL', BASE_URL);
     define('FAQ_PAGE_URL', BASE_URL.'faq');
-    define('APPENDIX_PAGE_URL', BASE_URL.'appendix');
+    define('RESOURCES_PAGE_URL', BASE_URL.'resources');
     define('DITHERMARK_APP_URL', '//app.dithermark.com');
 
 
