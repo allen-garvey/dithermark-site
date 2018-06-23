@@ -51,7 +51,7 @@
     </faq>
     <faq id="export-file-types">
         <question>What file type should I use when exporting an image?</question>
-        <answer>It is recommended you use the png file type when exporting your images, as it avoids <a href="https://en.wikipedia.org/wiki/Pixel_art#Saving_and_compression">undesirable compression artifacts.</a> However, in certain situations (such as when exporting a large, unpixelated image), exporting as a jpeg may result in a smaller file in exchange for a negligible loss in quality.</answer>
+        <answer>It is recommended you use the png file type when exporting your images, as it avoids <a href="https://en.wikipedia.org/wiki/Pixel_art#Saving_and_compression">undesirable compression artifacts.</a> However, in certain situations (such as when exporting a large, unpixelated image or using post dither image filters), exporting as a jpeg may result in a smaller file in exchange for a negligible loss in quality.</answer>
     </faq>
     <faq id="learn-more">
         <question>Where can I learn more about dithering or color quantization?</question>
