@@ -49,10 +49,6 @@
         <question>Why only 12 colors?</question>
         <answer></answer>    
     </faq>
-    <faq id="exporting-images">
-        <question>Why does saving my image fail?</question>
-        <answer>On browsers lacking <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob">HTMLCanvasElement.toBlob()</a> support (Apple Safari and Microsoft Edge), exporting a large image may fail. In that case, reset the zoom level to 100 and then right click on desktop/long press on mobile on the image you want to save. Select the 'Save image' or 'Save image as…' menu option to save your image as a png file.</answer>    
-    </faq>
     <faq id="export-file-types">
         <question>What file type should I use when exporting an image?</question>
         <answer>It is recommended you use the png file type when exporting your images, as it avoids <a href="https://en.wikipedia.org/wiki/Pixel_art#Saving_and_compression">undesirable compression artifacts.</a> However, in certain situations (such as when exporting a large, unpixelated image), exporting as a jpeg may result in a smaller file in exchange for a negligible loss in quality.</answer>
