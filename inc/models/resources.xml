@@ -131,7 +131,15 @@
             </source>
             <source url="http://research.cs.wisc.edu/graphics/Courses/559-f2002/lectures/cs559-5.ppt">
                 <title>University of Wisconsin Madison lecture (Power Point)</title>
-                <description>show different color quantization algorithm's output differences. Also mentions clustered ordered dithering.</description>
+                <description>demonstrates the differences in output between various color quantization algorithms. Also mentions clustered ordered dithering.</description>
+            </source>
+            <source url="https://lmcaraig.com/color-quantization-using-k-means/">
+                <title>Color quantization using k-means</title>
+                <description>blog post that introduces k-means color quantization and compares results with a randomly generated palette. Includes sample code in Python.</description>
+            </source>
+            <source url="https://arxiv.org/abs/1101.0395">
+                <title>Improving the Performance of K-Means for Color Quantization</title>
+                <description>academic paper that describes performance and accuracy improvements for k-means color quantization, and compares it to other color quantization methods.</description>
             </source>
             <source url="https://github.com/leeoniya/RgbQuant.js">
                 <title>RgbQuant.js</title>
