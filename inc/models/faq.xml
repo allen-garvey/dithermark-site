@@ -3,15 +3,19 @@
 <faq-list>
     <faq id="why-create-dithermark">
         <question>Why create Dithermark?</question>
-        <answer></answer>    
+        <answer>Dithermark was originally inspired by <a href="http://www.tannerhelland.com/4660/dithering-eleven-algorithms-source-code/">Tanner Helland's excellent introduction to image dithering.</a> While it was easy to find example images for different dithering algorithms, there were very few, if any applications that let you interactively compare them using your own photos. After an initial MVP and many visits from the feature creature, Dithermark was born.</answer>    
     </faq>
     <faq id="system-requirements">
         <question>What are the system requirements?</question>
-        <answer>A recent version (released in 2017 or later) of Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge is required. A laptop or desktop computer with Google Chrome or Mozilla Firefox is recommended for best experience, as certain features may be disabled in Apple Safari or Microsoft Edge.</answer>
+        <answer>If you have a version of either Google Chrome, Mozilla Firefox, Apple Safari or Microsoft Edge release in the second half of 2017 or later, you are most likely good to go. More specifically, Dithermark has been tested to work with at least Chrome 63, Firefox 59, Safari 11.1 and Edge 16, though older versions might work as well. For absolute best experience, a laptop or desktop computer with Google Chrome or Mozilla Firefox is recommended.</answer>
+    </faq>
+    <faq id="privacy">
+        <question>What is your privacy policy?</question>
+        <answer>We are committed to your privacy, which is why there is no tracking, cookies, telemetry or ads. No user data is stored or sent to our servers and everything that is saved is saved locally in your browser. Any images you open from your device remain private and are not sent to our servers. Once the page fully loads no additional web requests are made, the only exceptions being when you open images from the web. When opening an image from a URL, a normal web request is made, the same as if you opened the image url in your browser. When opening a random image, in accordance with <a href="https://medium.com/unsplash/unsplash-api-guidelines-28e0216e6daa">Unsplash's API Guidelines</a> a request is sent to Unsplash for the image and when you export it a network request is sent to Unsplash to let them know you downloaded it. This request does not contain any identifying information about you or how you have modified the photo, as it only sends the photo id so the photographer can get credit. Dithermark is open source, so if you are excessively concerned about your privacy you can audit the source code or host it locally.</answer>    
     </faq>
     <faq id="open-source">
         <question>Is Dithermark open source?</question>
-        <answer>Yes! Dithermark is open source and released under the MIT license. You can get the source code on the <a href="${DITHERMARK_GITHUB_URL}">Dithermark GitHub page.</a></answer>    
+        <answer>Yes! Dithermark is open source and released under the MIT license. You can get the source code at the <a href="${DITHERMARK_GITHUB_URL}">Dithermark GitHub page.</a></answer>    
     </faq>
     <faq id="bugs">
         <question>I think I've found a bug, what should I do?</question>
@@ -19,11 +23,7 @@
     </faq>
     <faq id="random-images">
         <question>Where do the random images come from?</question>
-        <answer>The random images are provided by <a href="https://unsplash.com/?utm_source=dithermark&amp;utm_medium=referral">Unsplash,</a> courtesy of their <a href="https://unsplash.com/developers">free photo API.</a></answer>
-    </faq>
-    <faq id="privacy">
-        <question>What is your privacy policy?</question>
-        <answer></answer>    
+        <answer>The random images are generously provided by <a href="https://unsplash.com/?utm_source=dithermark&amp;utm_medium=referral">Unsplash,</a> courtesy of their <a href="https://unsplash.com/developers">free photo API.</a></answer>
     </faq>
     <faq id="opening-large-images">
         <question>Why does my browser crash when opening an image?</question>
@@ -31,23 +31,23 @@
     </faq>
     <faq id="opening-image-url">
         <question>Why does opening an image from a URL not work?</question>
-        <answer></answer>    
+        <answer>If the web server for a website has not enabled <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS (Cross-Origin Resource Sharing)</a> your browser will not let you open the image for security reasons. In that case, you should try downloading the image to your device and opening it from there.</answer>    
     </faq>
     <faq id="webgl">
         <question>Should I enable WebGL?</question>
-        <answer>WebGL is enabled by default as it leverages the power of your GPU to complete tasks 30-100 times faster. Dithermark uses WebGL (when enabled) for everything except the error propogation dithers and optimize palette functionality. The only times when it might be advisable to disable WebGL is if you are noticing a large amount of artifacts in the random dithers, or you are opening images that are too large to fit in a single WebGL texture unit (you will see a warning if this is the case). If you do not see an option to enable WebGL, that means your device/browser doesn't support it. In that case do not worry, as everything will still work, it will just be slower than if your device supported WebGL.</answer>    
+        <answer>WebGL is enabled by default as it leverages the power of your GPU to complete tasks 30-100 times faster. Dithermark uses WebGL (when enabled) for everything except the error propogation dithers and optimize palette functionality. The only times when it might be advisable to disable WebGL is if you are noticing a large amount of artifacts in the random dithers, or you are opening images that are too large to fit in a single WebGL texture unit (you will see a warning if this is the case). If you do not see an option to enable WebGL, that means your device/browser doesn't support it. In that case all the dithering and color quantization features will still work though some of the image filters will be disabled.</answer>    
     </faq>
     <faq id="random-dither-artifacts">
         <question>Why are there artifacts in the random dithers?</question>
-        <answer></answer>    
+        <answer>The random dithers require random numbers, however without expensive, specialized hardware computers can only generate pseudo-random numbers. When using WebGL, the random numbers are even less random than usual since WebGL lacks a native random function, and so randomness is simulated using the sin() function. If you are seeing artifacts, the best solution is to re-run the dither by changing a parameter and changing it back. If you are seeing an excessive number of artifacts that are not fixed by this process <a href="#webgl">you might want to consider disabling WebGL.</a></answer>   
     </faq>
     <faq id="saved-settings-missing">
         <question>What happened to my saved settings/palettes?</question>
-        <answer></answer>
+        <answer>Dithermark saves your settings and palettes locally in your browser using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage">browser localStorage API.</a> That means if you clear your browser cache, your settings and palettes will be deleted as well. Also, if you open an incognito tab or change browsers, you will not be able to access your saved settings or palettes.</answer>
     </faq>
     <faq id="color-count">
         <question>Why only 12 colors?</question>
-        <answer></answer>    
+        <answer>While the color limit is one sense arbitrary, it does have technical, artistic and user experience justifications. From a technical perspective, increasing the color limit decreases performance, as the the dithering algorithms and some of the color quantization algorithms get slower the larger the output palette is. From an artistic standpoint, it is generally easier (especially for beginners) to create interesting images with a limited color palette. From a user experience perspective, it gets increasingly more difficult to manually edit palette colors as the palette size increases, particularly on mobile. Nevertheless, Dithermark is open source, so if you would like to increase the color palette you can edit the code yourself, and the project provides documentation on how to do this.</answer>    
     </faq>
     <faq id="export-file-types">
         <question>What file type should I use when exporting an image?</question>
