@@ -41,6 +41,10 @@
         <question>Why are there artifacts in the random dithers?</question>
         <answer>The random dithers require random numbers, however without expensive, specialized hardware computers can only generate pseudo-random numbers. When using WebGL, the random numbers are even less random than usual since WebGL lacks a native random function, and so randomness is simulated using the sin() function. If you are seeing artifacts, the best solution is to re-run the dither by changing a parameter and changing it back. If you are seeing an excessive number of artifacts that are not fixed by this process <a href="#webgl">you might want to consider disabling WebGL.</a></answer>   
     </faq>
+    <faq id="semi-transparent-pixels">
+        <question>Why do the colors of semi-transparent pixels look weird?</question>
+        <answer>Fully opaque and fully transparent pixels should always look correct, however for browser that don't support the WebGL premultipliedAlpha attribute, semi-transparent pixels can be rendered in weird colors. One workaround is to to disable WebGL in the settings tab or to use Google Chrome as your web browser. Alternatively, you can open the image in your image editor of choice and make all pixels either fully opaque or fully transparent. For example, to do this in <a href="https://www.gimp.org/">GIMP</a> you would open the image and then choose Layer→ Transparency→ Threshold Alpha.</answer>   
+    </faq>
     <faq id="saved-settings-missing">
         <question>What happened to my saved settings/palettes?</question>
         <answer>Dithermark saves your settings and palettes locally in your browser using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage">browser localStorage API.</a> That means if you clear your browser cache, your settings and palettes will be deleted as well. Also, if you open an incognito tab or change browsers, you will not be able to access your saved settings or palettes.</answer>
