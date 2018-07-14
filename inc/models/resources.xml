@@ -213,7 +213,7 @@
             </source>
             <source url="https://github.com/evanw/glfx.js">
                 <title>glfx.js</title>
-                <description>A library of different image filter implemented in WebGL. The source for the denoise filter as well as the contrast algorithm used on Safari and Edge.</description>
+                <description>A library of different image filter implemented in WebGL. The source for the denoise and outline filters as well as the contrast filter used on Safari and Edge.</description>
             </source>
             <source url="http://madebyevan.com/">
                 <title>Made by Evan</title>
@@ -256,8 +256,3 @@
         </sources>
     </section>
 </resources>
-
-<!-- <source url="">
-                <title></title>
-                <description></description>
-            </source> -->
