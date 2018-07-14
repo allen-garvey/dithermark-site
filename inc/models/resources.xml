@@ -87,15 +87,6 @@
             </source>
         </sources>
     </section>
-    <section title="Image Filters" id="image-filters">
-        <description></description>
-        <sources>
-            <source url="http://genericgamedev.com/effects/post-processing-pixelation/">
-                <title>Post Processing: Pixelation</title>
-                <description>An article about creative uses of pixelation</description>
-            </source>
-        </sources>
-    </section>
     <section title="Color" id="color">
         <description></description>
         <sources>
@@ -235,6 +226,10 @@
             <source url="https://stackoverflow.com/questions/5830139/how-can-i-do-these-image-processing-tasks-using-opengl-es-2-0-shaders?noredirect=1&amp;lq=1">
                 <title>OpenGL Kuwahara filter example</title>
                 <description>The source for the smoothing (Kuwahara filter) translated into WebGL.</description>
+            </source>
+            <source url="http://genericgamedev.com/effects/post-processing-pixelation/">
+                <title>Post Processing: Pixelation</title>
+                <description>An article about creative uses of pixelation</description>
             </source>
         </sources>
     </section>
