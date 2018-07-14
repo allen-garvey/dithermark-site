@@ -166,6 +166,27 @@
             </source>
         </sources>
     </section>
+    <section title="Image Filters" id="image-filters">
+        <description></description>
+        <sources>
+            <source url="http://www.robots.ox.ac.uk/~az/lectures/ia/lect4.pdf">
+                <title>Non-linear filters &amp; Image Compression (PDF)</title>
+                <description>Differences between median and bilateral filters (with image examples) as well as denoising in general</description>
+            </source>
+            <source url="http://www.mif.vu.lt/atpazinimas/dip/FIP/fip-Smoothin.html#Heading89">
+                <title>Smoothing Operations</title>
+                <description>Nice chart and image examples that show the differences between different linear and non-linear filters, as well as their time complexities.</description>
+            </source>
+            <source url="https://stackoverflow.com/questions/5830139/how-can-i-do-these-image-processing-tasks-using-opengl-es-2-0-shaders?noredirect=1&amp;lq=1">
+                <title>OpenGL Kuwahara filter example</title>
+                <description>The source for the smoothing (Kuwahara filter) translated into WebGL.</description>
+            </source>
+            <source url="http://genericgamedev.com/effects/post-processing-pixelation/">
+                <title>Post Processing: Pixelation</title>
+                <description>An article about creative uses of pixelation</description>
+            </source>
+        </sources>
+    </section>
     <section title="Canvas API" id="canvas-api">
         <description></description>
         <sources>
@@ -209,27 +230,6 @@
             <source url="http://madebyevan.com/">
                 <title>Made by Evan</title>
                 <description>cool WebGL projects</description>
-            </source>
-        </sources>
-    </section>
-    <section title="Image Filters" id="image-filters">
-        <description></description>
-        <sources>
-            <source url="http://www.robots.ox.ac.uk/~az/lectures/ia/lect4.pdf">
-                <title>Non-linear filters &amp; Image Compression (PDF)</title>
-                <description>Differences between median and bilateral filters (with image examples) as well as denoising in general</description>
-            </source>
-            <source url="http://www.mif.vu.lt/atpazinimas/dip/FIP/fip-Smoothin.html#Heading89">
-                <title>Smoothing Operations</title>
-                <description>Nice chart and image examples that show the differences between different linear and non-linear filters, as well as their time complexities.</description>
-            </source>
-            <source url="https://stackoverflow.com/questions/5830139/how-can-i-do-these-image-processing-tasks-using-opengl-es-2-0-shaders?noredirect=1&amp;lq=1">
-                <title>OpenGL Kuwahara filter example</title>
-                <description>The source for the smoothing (Kuwahara filter) translated into WebGL.</description>
-            </source>
-            <source url="http://genericgamedev.com/effects/post-processing-pixelation/">
-                <title>Post Processing: Pixelation</title>
-                <description>An article about creative uses of pixelation</description>
             </source>
         </sources>
     </section>
