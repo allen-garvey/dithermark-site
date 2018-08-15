@@ -50,7 +50,7 @@
         <answer>Dithermark saves your settings and palettes locally in your browser using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage">browser localStorage API.</a> That means if you clear your browser cache, your settings and palettes will be deleted as well. Also, if you open an incognito tab or change browsers, you will not be able to access your saved settings or palettes.</answer>
     </faq>
     <faq id="color-count">
-        <question>Why only 15 colors?</question>
+        <question>Why only 18 colors?</question>
         <answer>While the color limit is one sense arbitrary, it does have technical, artistic and user experience justifications. From a technical perspective, increasing the color limit decreases performance, as the the dithering algorithms and some of the color quantization algorithms get slower the larger the output palette is. From an artistic standpoint, it is generally easier (especially for beginners) to create interesting images with a limited color palette. From a user experience perspective, it gets increasingly more difficult to manually edit palette colors as the palette size increases, particularly on mobile. Nevertheless, Dithermark is open source, so if you would like to increase the color palette you can edit the code yourself, and the project provides documentation on how to do this.</answer>    
     </faq>
     <faq id="export-file-types">
