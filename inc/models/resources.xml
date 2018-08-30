@@ -20,6 +20,10 @@
                 <title>DITHER.TXT</title>
                 <description>one of the orginal references for image dithering</description>
             </source>
+            <source url="http://www.imagemagick.org/Usage/quantize/">
+                <title>ImageMagick Color Quantization and Dithering</title>
+                <description>examples of using ImageMagick to reduce colors and dither an image</description>
+            </source>
             <source url="http://caca.zoy.org/study/index.html">
                 <title>Libcaca study: the science behind colour ASCII art</title>
                 <description>very thorough series of chapters on different aspects of dithering, including lesser known variations on ordered and error diffusion dithering. Also is the source for the halftone ordered dither pattern.</description>
