@@ -240,6 +240,10 @@
     <section title="Related Apps" id="related-apps">
         <description></description>
         <sources>
+            <source url="https://kronbits.itch.io/pixatool">
+                <title>PixaTool</title>
+                <description>app to turn images into pixel art game assets</description>
+            </source>
             <source url="http://pixelatorapp.com/">
                 <title>Pixelator</title>
                 <description>desktop app specifically made to turn your photos into pixel art</description>
