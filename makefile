@@ -28,6 +28,7 @@ clean:
 	
 $(CSS_OUTPUT): $(shell find ./sass -type f -name '*.scss')
 	npm run webpack:prod
+	rm public_html/assets/app.js
 
 $(HOME_PAGE): $(PHP_SOURCE)
 	php inc/templates/home/index.php > $(HOME_PAGE)
