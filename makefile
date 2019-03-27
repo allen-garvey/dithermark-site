@@ -27,7 +27,7 @@ clean:
 	rm $(HOME_PAGE) $(FAQ_PAGE) $(RESOURCES_PAGE)
 	
 $(CSS_OUTPUT): $(shell find ./sass -type f -name '*.scss')
-	npm run gulp
+	npm run webpack:prod
 
 $(HOME_PAGE): $(PHP_SOURCE)
 	php inc/templates/home/index.php > $(HOME_PAGE)

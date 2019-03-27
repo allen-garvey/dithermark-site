@@ -29,8 +29,8 @@
      * URLs
      * */
     define('BASE_URL', '/');
-    define('CSS_URL_BASE', BASE_URL.'styles/');
-    define('JS_URL_BASE', BASE_URL.'js/');
+    define('CSS_URL_BASE', BASE_URL.'assets/');
+    define('JS_URL_BASE', BASE_URL.'assets/');
     define('IMAGES_URL', BASE_URL.'images/');
 
     define('CSS_APP_URL', CSS_URL_BASE.'style.css');
