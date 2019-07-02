@@ -27,7 +27,7 @@ clean:
 	rm $(HOME_PAGE) $(FAQ_PAGE) $(RESOURCES_PAGE)
 	
 $(CSS_OUTPUT): $(shell find ./sass -type f -name '*.scss')
-	npm run webpack:prod
+	npm run deploy
 	rm public_html/assets/app.js
 
 $(HOME_PAGE): $(PHP_SOURCE)
