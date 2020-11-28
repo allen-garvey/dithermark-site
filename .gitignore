@@ -19,6 +19,7 @@ Thumbs.db
 *.eot
 *.woff
 *.zip
+public_html/images/*
 public_html/styles/*
 public_html/assets/*
 public_html/*.html
