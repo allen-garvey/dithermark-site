@@ -1,6 +1,19 @@
 <div class="home-header">
-    <div class="carousel">
-        <img src="<?= IMAGES_URL.'home-sweet.png'; ?>" alt="Dithermark image output example" id="carousel-image"/>
+    <div class="carousel" id="carousel">
+        <?php foreach($data['images'] as $i => $image): 
+            $isFirst = $i === 0;
+            $attributePrefix = $isFirst ? '' : 'data-';
+            $pngSource = IMAGES_URL.$image.'.png';
+            $webpSource = IMAGES_URL.$image.'.webp';
+        ?>
+            <div class="carousel-slide<?= $isFirst ? ' selected' : ''; ?>">
+                <picture>
+                    <source <?= $attributePrefix; ?>srcset="<?= $webpSource; ?>" type="image/webp" />
+                    <source <?= $attributePrefix; ?>srcset="<?= $pngSource; ?>" type="image/png" />
+                    <img <?= $attributePrefix; ?>src="<?= $pngSource; ?>" alt="Dithermark image output example" />
+            </picture>
+            </div>
+        <?php endforeach; ?>
         <div class="carousel-button-container carousel-left">
             <div class="carousel-button" id="carousel-button-left"><span class="carousel-button-text">&lt;</span></div>
         </div>

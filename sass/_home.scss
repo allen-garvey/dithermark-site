@@ -109,6 +109,15 @@
         -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
     }
 }
+
+.carousel-slide {
+    display: none;
+
+    &.selected {
+        display: block;
+    }
+}
+
 .carousel-button-container{
     position: absolute;
     top: 0;

@@ -10,6 +10,7 @@ RESOURCES_PAGE=$(RESOURCES_DIR)/index.html
 
 #php
 PHP_SOURCE=$(shell find ./inc -type f -name '*.php')
+JS_SOURCE=$(shell find ./inc -type f -name '*.js')
 PHP_MODELS=$(shell find ./inc -type f -name '*.xml')
 
 #css
@@ -18,7 +19,8 @@ CSS_OUTPUT=$(CSS_OUTPUT_DIR)/style.css
 
 all: $(CSS_OUTPUT) html images
 
-html: $(HOME_PAGE) $(FAQ_PAGE) $(RESOURCES_PAGE)
+# html: $(HOME_PAGE) $(FAQ_PAGE) $(RESOURCES_PAGE)
+html: $(HOME_PAGE)
 
 install:
 	npm install
@@ -36,7 +38,7 @@ $(CSS_OUTPUT): $(shell find ./sass -type f -name '*.scss')
 	npm run deploy
 	rm public_html/assets/app.js
 
-$(HOME_PAGE): $(PHP_SOURCE)
+$(HOME_PAGE): $(PHP_SOURCE) $(PHP_MODELS) $(JS_SOURCE)
 	php inc/templates/home/index.php > $(HOME_PAGE)
 
 $(FAQ_PAGE): $(PHP_SOURCE) $(PHP_MODELS)

@@ -1,20 +1,39 @@
 (function(){
-    var imageUrls = ['home-sweet', 'nyc', 'neon-flower', 'tomato', 'jackson'];
-    var image = document.getElementById('carousel-image');
-    var currentIndex = 0;
-    function displayImage(){
-        image.src = '<?= IMAGES_URL; ?>'+imageUrls[currentIndex]+'.png';
-    }
-    document.getElementById('carousel-button-left').onclick = function(){
+    const slides = document.querySelectorAll('#carousel .carousel-slide');
+    const isSlideInitialized =  Array.from(slides, (slide, i) => i === 0);
+    let currentIndex = 0;
+    
+    const displayImage = () =>{
+        slides.forEach((slide, i) => {
+            const isCurrentSlide = i === currentIndex;
+            const classAction = isCurrentSlide ? 'add' : 'remove';
+
+            if(isCurrentSlide) {
+                if(!isSlideInitialized[i]){
+                    const image = slide.querySelector('img');
+                    image.src = image.dataset.src;
+                    slide.querySelectorAll('source').forEach(source => {
+                        source.srcset = source.dataset.srcset;
+                    });
+                }
+                isSlideInitialized[i] = true;
+            }
+
+            slide.classList[classAction]('selected');
+        });
+    };
+    
+    document.getElementById('carousel-button-left').onclick = () => {
         currentIndex--;
         if(currentIndex < 0){
-            currentIndex = imageUrls.length - 1;
+            currentIndex = slides.length - 1;
         }
         displayImage();
     };
-    document.getElementById('carousel-button-right').onclick = function(){
+    
+    document.getElementById('carousel-button-right').onclick = () => {
         currentIndex++;
-        if(currentIndex >= imageUrls.length){
+        if(currentIndex >= slides.length){
             currentIndex = 0;
         }
         displayImage();
