@@ -31,7 +31,7 @@ clean:
 
 images: $(shell find ./images -type f -name '*.png') build/image.sh
 	mkdir -p public_html/images
-	find images -name "*.png" | xargs -P 8 -I {} ./build/image.sh {}
+	find images -type f -name "*.png" | xargs -P 8 -I {} ./build/image.sh {}
 	
 $(CSS_OUTPUT): $(shell find ./sass -type f -name '*.scss')
 	npm run deploy
