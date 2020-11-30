@@ -92,6 +92,17 @@
 /**
 * Carousel
 */
+.embla {
+    overflow: hidden;
+}
+.embla__container {
+    display: flex;
+}
+.embla__slide {
+    position: relative;
+    min-width: 100%;
+}
+
 .carousel{
     position: relative;
     //from: https://stackoverflow.com/questions/3900436/image-scaling-by-css-is-there-a-webkit-alternative-for-moz-crisp-edges
@@ -111,11 +122,7 @@
 }
 
 .carousel-slide {
-    display: none;
 
-    &.selected {
-        display: block;
-    }
 }
 
 .carousel-button-container{
