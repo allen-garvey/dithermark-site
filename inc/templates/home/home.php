@@ -35,6 +35,5 @@
     </p>
     <div class="callout"><a class="btn btn-success" href="<?= DITHERMARK_APP_URL; ?>">Try it out!</a></div>
 </div>
-<script>
-    <?php require(TEMPLATES_HOME_PATH.'slideshow.js'); ?>
+<script src="<?= JS_URL_BASE.'app.js'; ?>">
 </script>

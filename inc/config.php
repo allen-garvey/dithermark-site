@@ -21,9 +21,6 @@
     define('TEMPLATES_HOME_PATH', TEMPLATES_PATH.'home'.DIRECTORY_SEPARATOR);
     define('TEMPLATES_FAQ_PATH', TEMPLATES_PATH.'faq'.DIRECTORY_SEPARATOR);
     define('TEMPLATES_RESOURCES_PATH', TEMPLATES_PATH.'resources'.DIRECTORY_SEPARATOR);
-    
-    //js source file paths
-    define('JS_SRC_PATH', ROOT_PATH.'js_src'.DIRECTORY_SEPARATOR);
 
     /**
      * URLs

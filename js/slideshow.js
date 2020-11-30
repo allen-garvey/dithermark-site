@@ -1,4 +1,5 @@
-(function(){
+
+ export default initializeSlideshow = () => {
     const slides = document.querySelectorAll('#carousel .carousel-slide');
     const isSlideInitialized =  Array.from(slides, (slide, i) => i === 0);
     let currentIndex = 0;
@@ -38,4 +39,4 @@
         }
         displayImage();
     };
-})();
+ };

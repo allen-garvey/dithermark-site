@@ -10,7 +10,6 @@ RESOURCES_PAGE=$(RESOURCES_DIR)/index.html
 
 #php
 PHP_SOURCE=$(shell find ./inc -type f -name '*.php')
-JS_SOURCE=$(shell find ./inc -type f -name '*.js')
 PHP_MODELS=$(shell find ./inc -type f -name '*.xml')
 
 #css
@@ -36,9 +35,8 @@ images: $(shell find ./images -type f -name '*.png') build/image.sh
 	
 $(CSS_OUTPUT): $(shell find ./sass -type f -name '*.scss')
 	npm run deploy
-	rm public_html/assets/app.js
 
-$(HOME_PAGE): $(PHP_SOURCE) $(PHP_MODELS) $(JS_SOURCE)
+$(HOME_PAGE): $(PHP_SOURCE) $(PHP_MODELS)
 	php inc/templates/home/index.php > $(HOME_PAGE)
 
 $(FAQ_PAGE): $(PHP_SOURCE) $(PHP_MODELS)
