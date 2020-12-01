@@ -18,7 +18,7 @@ CSS_OUTPUT=$(CSS_OUTPUT_DIR)/style.css
 
 #images
 IMAGES=$(shell find ./images -type f -name '*.png')
-IMAGES_SCRIPT=build/image.sh
+IMAGES_SCRIPT=./build/image.sh
 
 all: $(CSS_OUTPUT) html images
 
@@ -34,7 +34,7 @@ clean:
 
 images: $(IMAGES) $(IMAGES_SCRIPT)
 	mkdir -p public_html/images
-	find images -type f -name "*.png" | xargs -P 8 -I {} ./build/image.sh {}
+	find images -type f -name "*.png" | xargs -P 8 -I {} $(IMAGES_SCRIPT) {}
 	
 $(CSS_OUTPUT): $(shell find ./sass -type f -name '*.scss')
 	npm run deploy
