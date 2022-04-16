@@ -20,15 +20,15 @@
   },
   "homepage": "https://github.com/allen-garvey/dithermark-site#readme",
   "dependencies": {
-    "embla-carousel": "^4.5.1"
+    "embla-carousel": "^6.2.0"
   },
   "devDependencies": {
-    "css-loader": "^5.2.4",
-    "mini-css-extract-plugin": "^1.6.0",
-    "node-sass": "^6.0.0",
-    "sass-loader": "^11.1.1",
-    "webpack": "^5.37.1",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
   }
 }
