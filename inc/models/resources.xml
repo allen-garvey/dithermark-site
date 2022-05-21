@@ -16,6 +16,10 @@
                 <title>Image Dithering: Eleven Algorithms and Source Code</title>
                 <description>the article that served as the original inspiration for Dithermark</description>
             </source>
+            <source url="https://surma.dev/things/ditherpunk/">
+                <title>Ditherpunk — The article I wish I had about monochrome image dithering</title>
+                <description>Good overview of monochromatic dithering, and includes lesser know methods, such as blue noise and Riemersma dithering.</description>
+            </source>
             <source url="http://www.efg2.com/Lab/Library/ImageProcessing/DHALF.TXT">
                 <title>DITHER.TXT</title>
                 <description>one of the orginal references for image dithering</description>
