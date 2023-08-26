@@ -17,6 +17,10 @@
         <question>Is Dithermark open source?</question>
         <answer>Yes! Dithermark is open source and released under the MIT license. You can get the source code at the <a href="${DITHERMARK_GITHUB_URL}">Dithermark GitHub page.</a></answer>    
     </faq>
+    <faq id="copyright">
+        <question>Are there any restrictions on how I can use the output?</question>
+        <answer>No, you are free to use the output of Dithermark in any way you see fit, with no restrictions. Be aware that if that you use images in which you don't own the copyright as the input to Dithermark, the resulting output may still belong to the original copyright holder, so if you plan to do this research your country's copyright laws first.</answer>    
+    </faq>
     <faq id="bugs">
         <question>I think I've found a bug, what should I do?</question>
         <answer>First, read through this FAQ and see if it addresses your problem (particularly that you meet the minimum system requirements). If nothing helps, please open an issue on our <a href="${DITHERMARK_GITHUB_URL}issues">GitHub issues page.</a> Please make sure to include your operating system, operating system version, web browser and web browser version in your issue. While we appreciate you taking the time to help improve Dithermark, please be aware that the project is a free resource maintained by a single person, so it might be some time before your issue is addressed.</answer>    
