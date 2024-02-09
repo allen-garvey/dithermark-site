@@ -35,7 +35,7 @@
     <p>
         Do you love pixel art, needlepoint or retro video games? Dithermark uses the magic of <a href="https://en.wikipedia.org/wiki/Dither#Digital_photography_and_image_processing">image dithering algorithms</a> to let you easily achieve a similar effect using your own photos, right in your browser.
     </p>
-    <div class="callout"><a class="btn btn-success" href="<?= DITHERMARK_APP_URL; ?>">Try it out!</a></div>
+    <div class="callout"><a class="btn btn-success" href="<?= DITHERMARK_APP_URL; ?>">Get Started</a></div>
 </div>
 <script src="<?= JS_URL_BASE.'app.js'; ?>">
 </script>
