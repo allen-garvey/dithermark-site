@@ -20,6 +20,11 @@ a{
     }
 }
 
+code {
+    background-color: #eee;
+    padding: 0 0.25em;
+}
+
 .nav, .text-section{
     padding: 0 $global_horizontal_padding;
     //or we get problems with the padding not lining up
