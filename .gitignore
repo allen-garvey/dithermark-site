@@ -25,3 +25,4 @@ public_html/assets/*
 public_html/*.html
 public_html/*/*.html
 *.rb
+release/*

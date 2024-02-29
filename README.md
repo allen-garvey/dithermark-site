@@ -22,4 +22,4 @@ The support and marketing website for Dithermark. Not to be confused with the ac
 * Type `make install` to setup the project for the first time
 * Type `make` to compile the project
 * (If you run into any errors at this point, first check that you have all the needed dependencies for the project. Then type `make clean`, `make install`, and `make` again, and see if that fixes your problem).
-* Type `npm start` to start a local development server, after which you should be able to view the site at [localhost:3000](http://localhost:3000)
+* To ready the site for a production deploy, run `make release`

@@ -35,6 +35,11 @@ clean:
 images: $(IMAGES) $(IMAGES_SCRIPT)
 	mkdir -p public_html/images
 	find images -type f -name "*.png" | xargs -P 8 -I {} $(IMAGES_SCRIPT) {}
+
+release:
+	npm run deploy
+	mkdir -p release
+	rsync -av --exclude='*.php' --exclude='*.directory' $(PUBLIC_HTML_DIR) release
 	
 $(CSS_OUTPUT): $(shell find ./sass -type f -name '*.scss')
 	npm run deploy
