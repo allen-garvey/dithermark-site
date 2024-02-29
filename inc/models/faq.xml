@@ -39,7 +39,7 @@
     </faq>
     <faq id="batch-export">
         <question>Does Dithermark support batch conversion or expot of images?</question>
-        <answer>Yes (note this not available on iOS or in the desktop versions, due to the browser requiring permission before each individual image is saved). To use it, first open an image, and make sure all the dithering and export settings are to your liking. In the open tab, you will see new button that says "Batch convert image files". Click the button and select multiple image files in the file picker. All the images you selected will then be processed and exported with the same settings.</answer>    
+        <answer>Yes (note this not available on iOS or in the desktop versions, due to the browser requiring permission before each individual image is saved). To use it, first open an image, and make sure all the dithering and export settings are to your liking. In the open tab, you will see new button that says "Batch convert image files". Click the button and select multiple image files in the file picker. Your browser may ask if you want to enable multiple downloads, if that happens answer yes. All the images you selected will then be processed and exported with the same settings.</answer>    
     </faq>
     <faq id="video">
         <question>Does Dithermark support video?</question>
