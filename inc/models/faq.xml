@@ -37,6 +37,10 @@
         <question>Why does opening an image from a URL not work?</question>
         <answer>If the web server for a website has not enabled <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS (Cross-Origin Resource Sharing)</a> your browser will not let you open the image for security reasons. In that case, you should try downloading the image to your device and opening it from there.</answer>    
     </faq>
+    <faq id="batch-export">
+        <question>Does Dithermark support batch conversion or expot of images?</question>
+        <answer>Yes (note this not available on iOS or in the desktop versions, due to the browser requiring permission before each individual image is saved). To use it, first open an image, and make sure all the dithering and export settings are to your liking. In the open tab, you will see new button that says "Batch convert image files". Click the button and select multiple image files in the file picker. All the images you selected will then be processed and exported with the same settings.</answer>    
+    </faq>
     <faq id="webgl">
         <question>Should I enable WebGL?</question>
         <answer>WebGL is enabled by default as it leverages the power of your GPU to complete tasks 30-100 times faster. Dithermark uses WebGL (when enabled) for everything except the error propogation dithers and optimize palette functionality. The only times when it might be advisable to disable WebGL is if you are noticing a large amount of artifacts in the random dithers, or you are opening images that are too large to fit in a single WebGL texture unit (you will see a warning if this is the case). If you do not see an option to enable WebGL, that means your device/browser doesn't support it. In that case all the dithering and color quantization features will still work though some of the image filters will be disabled.</answer>    
