@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
     "deploy": "webpack --config webpack.config.js --mode='production'",
-    "start": "webpack serve --config webpack.config.js"
+    "watch": "webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -20,15 +20,14 @@
   },
   "homepage": "https://github.com/allen-garvey/dithermark-site#readme",
   "dependencies": {
-    "embla-carousel": "^7.1.0"
+    "embla-carousel": "^8.0.0"
   },
   "devDependencies": {
-    "css-loader": "^6.8.1",
-    "mini-css-extract-plugin": "^2.7.6",
+    "css-loader": "^6.10.0",
+    "mini-css-extract-plugin": "^2.8.1",
     "node-sass": "^9.0.0",
-    "sass-loader": "^13.3.2",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "sass-loader": "^14.1.1",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   }
 }
