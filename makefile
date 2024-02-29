@@ -20,6 +20,8 @@ CSS_OUTPUT=$(CSS_OUTPUT_DIR)/style.css
 IMAGES=$(shell find ./images -type f -name '*.png')
 IMAGES_SCRIPT=./build/image.sh
 
+.PHONY: release clean
+
 all: $(CSS_OUTPUT) html images
 
 html: $(HOME_PAGE) $(FAQ_PAGE) $(RESOURCES_PAGE)
