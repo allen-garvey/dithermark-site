@@ -49,6 +49,10 @@
         <question>Why do the colors of semi-transparent pixels look weird?</question>
         <answer>Fully opaque and fully transparent pixels should always look correct, however for browser that don't support the WebGL premultipliedAlpha attribute, semi-transparent pixels can be rendered in weird colors. One workaround is to to disable WebGL in the settings tab or to use Google Chrome as your web browser. Alternatively, you can open the image in your image editor of choice and make all pixels either fully opaque or fully transparent. For example, to do this in <a href="https://www.gimp.org/">GIMP</a> you would open the image and then choose Layer→ Transparency→ Threshold Alpha.</answer>   
     </faq>
+    <faq id="too-many-colors">
+        <question>Why are there more or different colors in the exported image than in my palette?</question>
+        <answer>If you use the post-dither filters or the outline filter, the colors of your dithered image can be altered, or more colors can be added. This is because using these filters is similar to exporting your dithered image and performing additional processing in an image editing program such as GIMP or Photoshop.</answer>
+    </faq>
     <faq id="saved-settings-missing">
         <question>What happened to my saved settings/palettes?</question>
         <answer>Dithermark saves your settings and palettes locally in your browser using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage">browser localStorage API.</a> That means if you clear your browser cache, your settings and palettes will be deleted as well. Also, if you open an incognito tab or change browsers, you will not be able to access your saved settings or palettes.</answer>
