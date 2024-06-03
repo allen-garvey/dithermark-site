@@ -1,10 +1,12 @@
+@use 'sass:math';
+
 /**
 * Styles for the home page
 */
 
 .home-header{
     position: relative;
-    margin: 0 auto $vertical_rhythm / 2;
+    margin: 0 auto math.div($vertical_rhythm, 2);
     max-width: $container_max_width;
 }
 .tagline-container{
