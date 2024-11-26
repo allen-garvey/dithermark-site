@@ -49,3 +49,26 @@ p{
     margin-top: 0;
     line-height: 1.25em;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #fff;
+        background-color: #202020;
+    }
+
+    a:not(.btn) {
+        &:link {
+            color: rgb(110, 168, 254);
+        }
+        &:visited {
+            color: rgb(167, 81, 233);
+        }
+        &:active {
+            color: red;
+        }
+    }
+
+    code {
+        background-color: #4a4a4a;
+    }
+}
