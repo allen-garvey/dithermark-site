@@ -47,13 +47,16 @@
     }
 }
 
-@mixin non_mobile_shared_styles{
+@include mixins.tablet_mq{
     .site-tagline{
         position: absolute;
         background-color: transparent;
         text-shadow: -1px 1px 0 black;
-        padding: 16px;
+        padding: 16px 16px 0;
+        top: 0;
+        left: 0;
     }
+
     .tagline-text{
         margin: 0;
         top: -8px;
@@ -65,9 +68,8 @@
 
 
 @include mixins.desktop_mq{
-    @include non_mobile_shared_styles();
     .site-tagline{
-        bottom: 0;
+        padding: 16px;
     }
     .tagline-title{
         font-size: variables.$font_size7;
@@ -81,13 +83,3 @@
     }
 }
 
-//title is below fold on small tablets in landscape mode
-@include mixins.mini_tablet_landscape_mq{
-    @include non_mobile_shared_styles();
-    .site-tagline{
-        top: 0;
-        left: 0;
-        bottom: initial;
-        padding-bottom: 0;
-    }
-}
