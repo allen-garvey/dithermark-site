@@ -2,8 +2,10 @@
 * Styles for Resources page
 */
 
+@use 'variables';
+
 .resource-section{
-    margin-bottom: 1.5 * $vertical_rhythm;
+    margin-bottom: 1.5 * variables.$vertical_rhythm;
 }
 
 .resource-source-list{

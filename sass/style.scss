@@ -1,9 +1,8 @@
-@import "variables.scss";
-@import "mixins.scss";
-@import "buttons.scss";
-@import "base.scss";
-@import "header.scss";
-@import "home.scss";
-@import "pages.scss";
-@import "faq.scss";
-@import "resources.scss";
+@use "buttons";
+@use "base";
+@use "header";
+@use "home";
+@use "carousel";
+@use "pages";
+@use "faq";
+@use "resources";

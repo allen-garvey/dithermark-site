@@ -2,16 +2,18 @@
 * Styles that apply to FAQ and Appendix pages
 */
 
+@use 'variables';
+
 .text-page{
-    margin-top: $vertical_rhythm;
+    margin-top: variables.$vertical_rhythm;
 }
 
 .page-title{
-    margin-bottom: $vertical_rhythm;
+    margin-bottom: variables.$vertical_rhythm;
 }
 
 .contents-list{
-    margin: 2*$vertical_rhythm 0 3*$vertical_rhythm;
+    margin: 2*variables.$vertical_rhythm 0 3*variables.$vertical_rhythm;
     padding: 0;
     list-style-type: none;
     line-height: 1.33em;

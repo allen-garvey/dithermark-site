@@ -1,9 +1,7 @@
-/*
-* Styles for FAQ page
-*/
+@use "variables";
 
 .faq-container{
-    margin-bottom: 1.5 * $vertical_rhythm;
+    margin-bottom: 1.5 * variables.$vertical_rhythm;
 
     p:last-of-type{
         margin-bottom: 0;

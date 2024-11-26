@@ -1,5 +1,8 @@
+@use 'variables';
+@use 'mixins';
+
 .header{
-    padding: 0.75 * $vertical_rhythm 0;
+    padding: 0.75 * variables.$vertical_rhythm 0;
     background-color: black;
     color: white;
 }
@@ -33,7 +36,7 @@
     }
 }
 
-@include desktop_mq{
+@include mixins.desktop_mq{
     .nav li{
         padding-right: 3em;
     }

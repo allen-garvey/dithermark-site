@@ -1,0 +1,83 @@
+.embla {
+    overflow: hidden;
+}
+.embla__container {
+    display: flex;
+}
+.embla__slide {
+    position: relative;
+    min-width: 100%;
+}
+
+.carousel{
+    position: relative;
+    //from: https://stackoverflow.com/questions/3900436/image-scaling-by-css-is-there-a-webkit-alternative-for-moz-crisp-edges
+    img{
+        //https://stackoverflow.com/questions/8522047/why-is-this-container-div-taller-than-required-to-wrap-the-image-it-contains
+        //otherwise there will be slight space below image
+        display: block;
+        image-rendering:optimizeSpeed;             /* Legal fallback */
+        image-rendering:-moz-crisp-edges;          /* Firefox        */
+        image-rendering:-o-crisp-edges;            /* Opera          */
+        image-rendering:-webkit-optimize-contrast; /* Safari         */
+        image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+        image-rendering:crisp-edges;               /* CSS4 Proposed  */
+        image-rendering:pixelated;                 /* CSS4 Proposed  */
+        -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+    }
+}
+
+// .carousel-slide {
+
+// }
+
+.carousel-button-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+$carousel_button_horizontal_padding: 4px;
+
+.carousel-right{
+    right: 0;
+    padding-right: $carousel_button_horizontal_padding;
+}
+
+.carousel-left{
+    left: 0;
+    padding-left: $carousel_button_horizontal_padding;
+}
+
+.carousel-button{
+    position: relative;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 28px;
+    opacity: 0.6;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+//so buttons will be perfectly rounnd
+.carousel-button-text{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

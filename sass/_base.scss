@@ -1,3 +1,5 @@
+@use "variables";
+
 html{
     scroll-behavior: smooth;
 }
@@ -10,7 +12,7 @@ html, body, h1, h2, h3, h4, ul, ol{
 }
 
 h1{
-    font-size: $font_size5;
+    font-size: variables.$font_size5;
 }
 
 a{
@@ -26,7 +28,7 @@ code {
 }
 
 .nav, .text-section{
-    padding: 0 $global_horizontal_padding;
+    padding: 0 variables.$global_horizontal_padding;
     //or we get problems with the padding not lining up
     box-sizing: border-box;
 }
@@ -39,7 +41,7 @@ img, picture{
 }
 
 .container{
-    max-width: $container_max_width;
+    max-width: variables.$container_max_width;
     margin: 0 auto;
 }
 

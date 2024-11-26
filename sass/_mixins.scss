@@ -1,3 +1,11 @@
+/**
+* Media queries
+*/
+
+$desktop_mq_width: 1080px;
+$mini_tablet_landscape_mq_height: 800px;
+$mini_tablet_landscape_mq_width: 600px;
+
 @mixin desktop_mq{
     @media screen and (min-width: $desktop_mq_width){
         @content;
