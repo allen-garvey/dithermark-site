@@ -3,6 +3,5 @@
 $images = [
     'home-sweet', 
     'nyc', 
-    'neon-flower', 
-    'tomato', 
+    'neon-flower',
 ];
