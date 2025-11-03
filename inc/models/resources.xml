@@ -60,6 +60,10 @@
                 <title>Dither Stabilization</title>
                 <description>describes the creator of <a href="http://dukope.com/">Return of the Obra Dinn's</a> process for making an image dithering visual effect that would remain stable even when the player moves the camera</description>
             </source>
+            <source url="https://momentsingraphics.de/BlueNoise.html">
+                <title>Free blue noise textures</title>
+                <description>explanation of blue noise as it applies to dithering. Also includes the texture used in Dithermark's blue noise implementation.</description>
+            </source>
         </sources>
     </section>
     <section title="Ordered Dithering" id="ordered-dithering">
