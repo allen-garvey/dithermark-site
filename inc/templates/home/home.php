@@ -4,15 +4,10 @@
             <?php foreach($data['images'] as $i => $image): 
                 $isFirst = $i === 0;
                 $attributePrefix = $isFirst ? '' : 'data-';
-                $pngSource = IMAGES_URL.$image.'.png';
                 $webpSource = IMAGES_URL.$image.'.webp';
             ?>
                 <div class="embla__slide carousel-slide">
-                    <picture>
-                        <source <?= $attributePrefix; ?>srcset="<?= $webpSource; ?>" type="image/webp" />
-                        <source <?= $attributePrefix; ?>srcset="<?= $pngSource; ?>" type="image/png" />
-                        <img <?= $attributePrefix; ?>src="<?= $pngSource; ?>" alt="Dithermark image output example" />
-                </picture>
+                    <img <?= $attributePrefix; ?>src="<?= $webpSource; ?>" alt="Dithermark image output example" />
                 </div>
             <?php endforeach; ?>
         </div>

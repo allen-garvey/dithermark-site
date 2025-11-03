@@ -16,13 +16,9 @@ PHP_MODELS=$(shell find ./inc -type f -name '*.xml')
 CSS_OUTPUT_DIR=$(PUBLIC_HTML_DIR)/styles
 CSS_OUTPUT=$(CSS_OUTPUT_DIR)/style.css
 
-#images
-IMAGES=$(shell find ./images -type f -name '*.png')
-IMAGES_SCRIPT=./build/image.sh
+.PHONY: release clean
 
-.PHONY: release clean images
-
-all: $(CSS_OUTPUT) html images
+all: $(CSS_OUTPUT) html
 
 html: $(HOME_PAGE) $(FAQ_PAGE) $(RESOURCES_PAGE)
 
@@ -33,10 +29,6 @@ install:
 
 clean:
 	rm $(HOME_PAGE) $(FAQ_PAGE) $(RESOURCES_PAGE)
-
-images: $(IMAGES) $(IMAGES_SCRIPT)
-	mkdir -p public_html/images
-	find images -type f -name "*.png" | xargs -P 8 -I {} $(IMAGES_SCRIPT) {}
 
 release:
 	npm run deploy
