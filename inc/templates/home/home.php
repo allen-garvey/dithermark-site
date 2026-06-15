@@ -1,22 +1,6 @@
 <div class="home-header">
-    <div class="carousel embla" id="carousel">
-        <div class="embla__container">
-            <?php foreach($data['images'] as $i => $image): 
-                $isFirst = $i === 0;
-                $attributePrefix = $isFirst ? '' : 'data-';
-                $webpSource = IMAGES_URL.$image.'.webp';
-            ?>
-                <div class="embla__slide carousel-slide">
-                    <img <?= $attributePrefix; ?>src="<?= $webpSource; ?>" alt="Dithermark image output example" />
-                </div>
-            <?php endforeach; ?>
-        </div>
-        <div class="carousel-button-container carousel-left">
-            <div class="carousel-button" id="carousel-button-left"><span class="carousel-button-text">&lt;</span></div>
-        </div>
-        <div class="carousel-button-container carousel-right">
-            <div class="carousel-button" id="carousel-button-right"><span class="carousel-button-text">&gt;</span></div>
-        </div>
+    <div class="hero-image-container">
+        <img src="<?= IMAGES_URL.'home-sweet.webp' ?>" alt="Dithermark image output example" />
     </div>
     <div class="site-tagline">
         <div class="tagline-container">
@@ -32,5 +16,3 @@
     </p>
     <div class="callout"><a class="btn btn-success" href="<?= DITHERMARK_APP_URL; ?>">Get Started</a></div>
 </div>
-<script src="<?= JS_URL_BASE.'app.js'; ?>">
-</script>
