@@ -1,43 +1,46 @@
-@use 'variables';
-@use 'mixins';
+@use "variables";
 
-.header{
-    padding: 0.75 * variables.$vertical_rhythm 0;
-    background-color: black;
-    color: white;
+.header {
+  padding: 0.75 * variables.$vertical_rhythm 0;
+  background-color: black;
+  color: white;
 }
 
-.nav{
-    ul{
-        padding: 0;
-        list-style-type: none;
-        display: flex;
+.nav {
+  ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em 2em;
+  }
+  a {
+    &:link {
+      color: white;
     }
-    li{
-        padding-right: 2em;
+    &:visited {
+      color: #aaa;
     }
-    a{
-        &:link{
-            color: white;
-        }
-        &:visited{
-            color: #aaa;
-        }
-    }
+  }
 
-    .brand{
-        font-weight: bold;
-        a{
-            color: white;
-            &:hover{
-                text-decoration: none;
-            }
-        }
+  .brand {
+    font-weight: bold;
+    a {
+      color: white;
+      &:hover {
+        text-decoration: none;
+      }
     }
+  }
 }
 
-@include mixins.desktop_mq{
-    .nav li{
-        padding-right: 3em;
-    }
+@media screen and (min-width: 450px) {
+  .nav ul {
+    gap: 3em;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .nav ul {
+    flex-direction: column;
+  }
 }
