@@ -38,10 +38,8 @@
         <answer>If the web server for a website has not enabled <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS (Cross-Origin Resource Sharing)</a> your browser will not let you open the image for security reasons. In that case, you should try downloading the image to your device and opening it from there.</answer>    
     </faq>
     <faq id="video">
-        <question>Does Dithermark support video?</question>
-        <answer>Dithermark does not directly support video dithering, however you can use a tool such as <a href="https://ffmpeg.org/">FFmpeg</a> to convert a video to still images, use the Dithermark batch converter as described above to dither the images, and then use FFmpeg to to convert the images back to video. <a href="https://www.youtube.com/watch?v=24jL0av_ve8"> Here is an example of what that might look like, using a video framerate of 6 fps.</a> Note when using Dithermark's batch export function, you most likely will want to disable shrinking large images in the settings tab, and choose upsampled in the export tab if you have pixelated the image, as otherwise your exported images will be a smaller than the input image.<br/><br/>
-        
-        As an example of what FFmpeg commands to use, <code>ffmpeg -i your-video.mp4 -vf fps=24 ./output-directory/%04d.jpg</code> converts a video to images at 24 fps. After dithering those images, you can convert the images back to video using the following FFmpeg command (note this assumes you exported the images from Dithermark as pngs, and placed them all in the same folder together. Image names must be a sequence of numbers, if you have saved duplicates your operating system might alter the filename which will cause the command to not work correctly) <code>ffmpeg -framerate 24 -f image2 -i ./%4d.png out.mp4</code></answer>    
+        <question>What do I do if there are problems playing my exported video?</question>
+        <answer>It has been observed when using Safari on Mac to export video that if the H.264 or H.265 codecs are used, the colors on the exported video can be incorrect. In that case, try selecting the VP8 or VP9 codecs to see if that fixes the problem. If you are exporting a video on iOS using the either the VP8 or VP9 codecs, the default video player may not be able to play the video. If that happens to you, try either downloading a different video player from the App Store, or using the H.264 or H.265 codecs when exporting video.</answer>    
     </faq>
     <faq id="webgl">
         <question>Should I enable WebGL?</question>
