@@ -37,10 +37,6 @@
         <question>Why does opening an image from a URL not work?</question>
         <answer>If the web server for a website has not enabled <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS (Cross-Origin Resource Sharing)</a> your browser will not let you open the image for security reasons. In that case, you should try downloading the image to your device and opening it from there.</answer>    
     </faq>
-    <faq id="batch-export">
-        <question>Does Dithermark support batch conversion or expot of images?</question>
-        <answer>Yes (note this not available on iOS or in the desktop versions, due to the browser requiring permission before each individual image is saved). To use it, first open an image, and make sure all the dithering and export settings are to your liking. In the open tab, you will see new button that says "Batch convert image files". Click the button and select multiple image files in the file picker. Your browser may ask if you want to enable multiple downloads, if that happens answer yes. All the images you selected will then be processed and exported with the same settings.</answer>    
-    </faq>
     <faq id="video">
         <question>Does Dithermark support video?</question>
         <answer>Dithermark does not directly support video dithering, however you can use a tool such as <a href="https://ffmpeg.org/">FFmpeg</a> to convert a video to still images, use the Dithermark batch converter as described above to dither the images, and then use FFmpeg to to convert the images back to video. <a href="https://www.youtube.com/watch?v=24jL0av_ve8"> Here is an example of what that might look like, using a video framerate of 6 fps.</a> Note when using Dithermark's batch export function, you most likely will want to disable shrinking large images in the settings tab, and choose upsampled in the export tab if you have pixelated the image, as otherwise your exported images will be a smaller than the input image.<br/><br/>
