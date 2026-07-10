@@ -30,7 +30,7 @@ install:
 clean:
 	rm $(HOME_PAGE) $(FAQ_PAGE) $(RESOURCES_PAGE)
 
-release:
+release: all
 	npm run deploy
 	mkdir -p release
 	rsync -av --exclude='*.php' --exclude='*.directory' $(PUBLIC_HTML_DIR) release
